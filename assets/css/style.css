@@ -7783,7 +7783,7 @@
     }
     body {
       font-family: "Inter", sans-serif;
-      backgroundfon: var(--theme-bg-default);
+      background: var(--theme-bg-default);
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
       --tw-leading: var(--leading-normal);
