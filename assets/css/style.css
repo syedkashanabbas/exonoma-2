@@ -7782,8 +7782,8 @@
       border-color: var(--theme-divider);
     }
     body {
-      font-family: "Figtree", sans-serif;
-      background-color: var(--theme-bg-default);
+      font-family: "Inter", sans-serif;
+      background-color: rgb(24, 32, 56);
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
       --tw-leading: var(--leading-normal);
