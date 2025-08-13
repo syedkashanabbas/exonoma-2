@@ -7783,7 +7783,7 @@
     }
     body {
       font-family: "Inter", sans-serif;
-      background-color: rgb(24, 32, 56);
+      backgroundfon: var(--theme-bg-default);
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
       --tw-leading: var(--leading-normal);
@@ -8821,7 +8821,13 @@
   --theme-text-primary: #E2E2E5;
   --theme-text-secondary: #C2C7CE;
   --theme-divider: #42474E;
-  --theme-bg-default: #0B0F12;
+  /* --theme-bg-default: #0B0F12; */
+  --theme-bg-default: linear-gradient(
+    135deg,
+    #0B0F12 0%,
+    #182038 50%,
+    #080C10 100%
+  );
   --theme-bg-paper: #0B0F12;
 }
 .preset-crm {
