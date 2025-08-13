@@ -4,14 +4,14 @@
 <!-- [Head] start -->
 
 <head>
-  <title>Exonoma | Ai Driven Investments </title>
+  <title>Exonoma | AI-Driven Investment Intelligence</title>
   <!-- [Meta] -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="" />
-  <meta name="keywords" content=""/>
-  <meta name="author" content="" />
+  <meta name="description" content="Exonoma: The future of AI-driven crypto hedge funds. Unlocking unparalleled investment opportunities with advanced intelligence." />
+  <meta name="keywords" content="Exonoma, AI, Crypto, Hedge Fund, Investments, Blockchain, Finance, Technology, AI-driven, Predictive Analytics"/>
+  <meta name="author" content="Exonoma Team" />
 
   <!-- [Favicon] icon -->
   <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
@@ -36,12 +36,68 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 <link rel="stylesheet" href="./assets/css/style.css" id="main-style-link" />
 <link rel="stylesheet" href="./assets/css/plugins/tiny-slider.css" />
+<!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<style>
+
+    .hero-heading {
+      font-family: Inter, "Inter Placeholder", sans-serif !important;
+      font-size: 85px !important;
+      font-weight: 300 !important; /* Increased font-weight for impact */
+      letter-spacing: -5.35px !important;
+      text-decoration: none !important;
+      color: rgb(255, 255, 255) !important;
+      text-align: center !important;
+      word-spacing: 0px !important;
+      line-height: 1.1; /* Adjust line height for better stacking */
+    }
+    @media (max-width: 768px) {
+        .hero-heading {
+            font-size: 48px !important;
+            letter-spacing: -2px !important;
+        }
+    }
+    @media (max-width: 480px) {
+        .hero-heading {
+            font-size: 36px !important;
+            letter-spacing: -1.5px !important;
+        }
+    }
+
+    /* Custom styles for 3D canvas */
+
+    .blog-slider1 .item {
+        padding: 0 6px; /* Adjust padding for better spacing in slider */
+    }
+    .common-section {
+        padding-top: 60px; /* Consistent top padding for sections */
+        padding-bottom: 60px; /* Consistent bottom padding for sections */
+    }
+    @media (min-width: 768px) {
+        .common-section {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+    }
+    @media (min-width: 1024px) {
+        .common-section {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+    }
+</style>
 
 </head>
 
 
 <body>
-
+  <!-- Futuristic Loader -->
+  <div id="loader-wrapper">
+    <!-- <svg id="loader" viewBox="0 0 100 100">
+      <path d="M 50 0 L 90 20 L 90 80 L 50 100 L 10 80 L 10 20 Z"></path>
+    </svg> -->
+  </div>
 
   <!-- [ Nav ] start -->
   <nav class="z-50 w-full relative">
@@ -67,21 +123,21 @@
             <div class="justify-center flex flex-col lg:flex-row p-0 lg:rounded-full">
               
               <a class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429]"
-                href="#">
+                href="#" data-aos="fade-down" data-aos-delay="100">
                 Tokenomics
               </a>
               <a class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429]"
-                href="#">
+                href="#" data-aos="fade-down" data-aos-delay="150">
                 Blog
               </a>
               <a class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429]"
-                href="#">
+                href="#" data-aos="fade-down" data-aos-delay="200">
                 Card
               </a>
               <div class="btn-group group">
                 <button
                   class="inline-flex text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429] dropdown-toggle arrow-none ltr:text-left rtl:text-right max-lg:w-full justify-between items-center"
-                  type="button" data-pc-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  type="button" data-pc-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-aos="fade-down" data-aos-delay="250">
                   Pages
                   <i class="ti ti-chevron-down"></i>
                 </button>
@@ -139,7 +195,7 @@
                 </div>
               </div>
               <a class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429]"
-                href="#">
+                href="#" data-aos="fade-down" data-aos-delay="300">
                 Help
               </a>
               <div class="py-5 px-6 sm:hidden">
@@ -153,7 +209,7 @@
         </div>
         <div class="flex items-center gap-3">
           
-          <a href="#" class="btn-primary btn max-sm:hidden">Register</a>
+          <a href="#" class="btn-primary btn max-sm:hidden" data-aos="fade-down" data-aos-delay="350">Register</a>
         </div>
         <button data-pc-toggle="nav-collapse" type="button" data-pc-target="#main-navbar-collapse"
           class="inline-flex ltr:ml-2 rtl:mr-2 items-center p-2 w-10 h-10 justify-center text-sm text-neutral-900 rounded-full lg:hidden hover:bg-neutral-100 focus:outline-none">
@@ -162,54 +218,41 @@
       </div>
     </div>
   </nav>
-  <!-- [ Nav ] start -->
-  <!-- [ Feature ] start -->
-    <style>
-        .hero-heading {
-          font-family: Inter, "Inter Placeholder", sans-serif !important;
-          font-size: 85px !important;
-          font-weight: 00 !important;
-          letter-spacing: -5.35px !important;
-          text-decoration: none !important;
-          color: rgb(255, 255, 255) !important;
-          text-align: center !important;
-          word-spacing: 0px !important;
-        }
-    </style>
+  <!-- [ Nav ] end -->
 
-    <section class="common-section">
-      <div class="container">
+  <!-- Main Content Wrapper for Loader -->
+  <div id="main-content" style="opacity: 0;">
+
+    <!-- [ Hero Section ] start -->
+    <section class="common-section relative overflow-hidden">
+    
+
+      <div class="container relative z-10">
         <div class="flex flex-col items-center gap-3 md:gap-6 text-center">
-          <div class="py-3 px-6 text-theme-textsecondary caption bg-neutral-100 rounded-full">
+          <div class="py-3 px-6 text-theme-textsecondary caption bg-neutral-100 rounded-full" data-aos="fade-up" data-aos-delay="400">
             Compliance audited by Binance <a href="#" class="text-primary-500 hover:text-primary-800 hover:underline transition-all">explore now</a>
           </div>
-          <h1 class="hero-heading">
-        Crypto Hedge Fund
-
-      </h1>
-        <h1 class="hero-heading">
-      
-          powered by AI
-      </h1>
-
-
-
-
-     </div>
-        
-        <div class="flex flex-row justify-center gap-2 sm:gap-4 lg:gap-5 mt-4 sm:mt-8">
-          <button class="btn btn-lg btn-primary">Get Started - It’s Free</button>
-          
+          <h1 class="hero-heading" data-aos="fade-up" data-aos-delay="500">
+            Unlocking Future Value
+          </h1>
+          <h1 class="hero-heading" data-aos="fade-up" data-aos-delay="600">
+            with AI-Driven Investments
+          </h1>
         </div>
-        <div class="sticky top-0">
+        
+        <div class="flex flex-row justify-center gap-2 sm:gap-4 lg:gap-5 mt-4 sm:mt-8" data-aos="fade-up" data-aos-delay="700">
+          <button class="btn btn-lg btn-primary hover-scale-btn">Get Started - It’s Free</button>
+        </div>
+        <div class="sticky top-0" data-aos="fade-up" data-aos-delay="800">
           <div class="px-6 sm:px-10 lg:px-16 pt-6 sm:pt-10 lg:pt-16 h-[220px] sm:h-[400px] lg:h-[543px] rounded-3xl sm:rounded-[32px] lg:rounded-[40px] bg-neutral-100 mt-6 sm:mt-8 md:mt-10">
             <div class="h-full rounded-t-xl sm:rounded-t-2xl md:rounded-t-[20px] border-[5px] border-b-0 border-neutral-200 bg-top bg-cover bg-[url('../images/graphics/ai/desktop1-light.svg')] dark:bg-[url('../images/graphics/ai/desktop1-dark.svg')]"></div>
           </div>
         </div>
       </div>
     </section>
-    
+    <!-- [ Hero Section ] end -->
 
+    <!-- [ Trust & Performance Section ] start -->
     <section class="common-section">
       <div class="container">
         <div
@@ -217,7 +260,7 @@
           <div class="grid grid-cols-12 gap-y-10 sm:gap-0 md:gap-6">
             <div class="col-span-12 sm:col-span-9 lg:col-span-8 self-end">
               <div class="flex flex-col gap-10">
-                <div class="flex flex-col gap-2">
+                <div class="flex flex-col gap-2" data-aos="fade-right">
                   <div class="flex flex-col gap-1">
                     <div class="flex -space-x-[14px] *:w-[42px] *:h-[42px] *:rounded-full *:border *:border-theme-bg-paper">
                       <img src="../assets/images/user/avatar1.png" alt="img" class="z-40">
@@ -226,7 +269,7 @@
                       <img src="../assets/images/user/avatar4.png" alt="img" class="z-10">
                       <img src="../assets/images/user/avatar5.png" alt="img" class="z-0">
                     </div>
-                    <h6 class="subtitle2">10k+ Reviews (4.5 out of 5)</h6>
+                    <h6 class="subtitle2">10k+ Global Reviews (4.9 out of 5)</h6>
                   </div>
                   <div class="text-primary-500">
                     <!-- [ wawe image ] -->
@@ -240,17 +283,16 @@
                     </svg>
                   </div>
                 </div>
-                <div class="flex flex-col gap-4 sm:gap-10">
-                  <h2 class="text-theme-text-primary">Enhance performance <span class="text-theme-text-secondary">and
-                      efficiency. Dive into SaasAble for a </span>better cloud experience.</h2>
+                <div class="flex flex-col gap-4 sm:gap-10" data-aos="fade-right" data-aos-delay="100">
+                  <h2 class="text-theme-text-primary">Propel your portfolio with <span class="text-theme-text-secondary">AI-driven insights. Dive into Exonoma for a </span>smarter investment future.</h2>
                   <div class="flex gap-2 flex-col sm:flex-row sm:gap-x-6 flex-wrap">
                     <div class="flex flex-row items-center gap-2 text-theme-text-secondary">
                       <i class="ti ti-rosette-discount-check text-2xl leading-none"></i>
-                      <p class="body2">Automated Scaling for Efficiency</p>
+                      <p class="body2">Automated Predictive Analytics</p>
                     </div>
                     <div class="flex flex-row items-center gap-2 text-theme-text-secondary">
                       <i class="ti ti-rosette-discount-check text-2xl leading-none"></i>
-                      <p class="body2">Real-time Performance Insights</p>
+                      <p class="body2">Real-time Market Intelligence</p>
                     </div>
                   </div>
                 </div>
@@ -268,8 +310,8 @@
                   </svg>
                 </div>
                 <h6 class="subtitle1 text-primary-500 w-[94px] absolute top-[6px] sm:-top-40 lg:-top-[82px] ltr:-right-40 ltr:sm:right-0 rtl:-left-40 rtl:sm:left-0">300+ Client Trust Us</h6>
-                <div class="ltr:sm:text-right rtl:sm:text-left max-sm:inline-block">
-                  <button class="btn btn-primary btn-lg lg:min-w-[263px]">Get Started</button>
+                <div class="ltr:sm:text-right rtl:sm:text-left max-sm:inline-block" data-aos="fade-left" data-aos-delay="200">
+                  <button class="btn btn-primary btn-lg lg:min-w-[263px] hover-scale-btn">Explore Solutions</button>
                 </div>
               </div>
             </div>
@@ -277,65 +319,65 @@
         </div>
       </div>
     </section>
+    <!-- [ Trust & Performance Section ] end -->
 
-
-
-        <section class="common-section">
+    <!-- [ Resource Center Section ] start -->
+    <section class="common-section">
       <div class="container">
         <div class="flex flex-col gap-5">
-          <div class="flex flex-col gap-2 sm:gap-3">
-            <h2>Resource Center</h2>
+          <div class="flex flex-col gap-2 sm:gap-3" data-aos="fade-up">
+            <h2>Exonoma Insights Hub</h2>
             <h6 class="text-theme-textsecondary max-w-[750px]">
-              Discover the features that will transform your customer relationships
+              Discover our latest research, market analyses, and strategic insights to empower your investment decisions.
             </h6>
           </div>
           <div class="relative overflow-hidden" dir="ltr">
             <div class="blog-slider1 flex items-stretch">
-              <div class="item">
+              <div class="item" data-aos="fade-up" data-aos-delay="100">
                 <div class="bg-[url('../images/blog/blog1.png')] relative h-[250px] sm:h-[300px] md:h-[410px] rounded-3xl sm:rounded-[32px] md:rounded-[40px] w-full overflow-hidden bg-cover bg-center">
                   <div class="absolute inset-0 bg-[linear-gradient(360deg,_var(--neutral-900)_0%,_transparent_100%)] opacity-50"></div>
                   <div class="flex items-end h-full p-6 relative z-10 select-none">
-                    <a href="#" class="h5 text-theme-bg-paper select-none hover:underline">The power of SaaS and how it can revolutionize.</a>
+                    <a href="#" class="h5 text-theme-bg-paper select-none hover:underline">The power of AI in revolutionizing financial markets.</a>
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item" data-aos="fade-up" data-aos-delay="200">
                 <div class="bg-[url('../images/blog/blog6.png')] relative h-[250px] sm:h-[300px] md:h-[410px] rounded-3xl sm:rounded-[32px] md:rounded-[40px] w-full overflow-hidden bg-cover bg-center">
                   <div class="absolute inset-0 bg-[linear-gradient(360deg,_var(--neutral-900)_0%,_transparent_100%)] opacity-50"></div>
                   <div class="flex items-end h-full p-6 relative z-10 select-none">
-                    <a href="#" class="h5 text-theme-bg-paper select-none hover:underline">Navigating the Future of AI and Machine Learning.</a>
+                    <a href="#" class="h5 text-theme-bg-paper select-none hover:underline">Navigating the Future of Decentralized Finance (DeFi).</a>
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item" data-aos="fade-up" data-aos-delay="300">
                 <div class="bg-[url('../images/blog/blog4.jpg')] relative h-[250px] sm:h-[300px] md:h-[410px] rounded-3xl sm:rounded-[32px] md:rounded-[40px] w-full overflow-hidden bg-cover bg-center">
                   <div class="absolute inset-0 bg-[linear-gradient(360deg,_var(--neutral-900)_0%,_transparent_100%)] opacity-50"></div>
                   <div class="flex items-end h-full p-6 relative z-10 select-none">
-                    <a href="#" class="h5 text-theme-bg-paper select-none hover:underline">Best Practices for Scaling Your Startup.</a>
+                    <a href="#" class="h5 text-theme-bg-paper select-none hover:underline">Best Practices for Securing Your Digital Assets.</a>
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item" data-aos="fade-up" data-aos-delay="400">
                 <div class="bg-[url('../images/blog/blog2.jpg')] relative h-[250px] sm:h-[300px] md:h-[410px] rounded-3xl sm:rounded-[32px] md:rounded-[40px] w-full overflow-hidden bg-cover bg-center">
                   <div class="absolute inset-0 bg-[linear-gradient(360deg,_var(--neutral-900)_0%,_transparent_100%)] opacity-50"></div>
                   <div class="flex items-end h-full p-6 relative z-10 select-none">
-                    <a href="#" class="h5 text-theme-bg-paper select-none hover:underline">Crafting a Customer-Centric Content Strategy.</a>
+                    <a href="#" class="h5 text-theme-bg-paper select-none hover:underline">Crafting a Data-Driven Investment Strategy.</a>
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item" data-aos="fade-up" data-aos-delay="500">
                 <div class="bg-[url('../images/blog/blog5.png')] relative h-[250px] sm:h-[300px] md:h-[410px] rounded-3xl sm:rounded-[32px] md:rounded-[40px] w-full overflow-hidden bg-cover bg-center">
                   <div class="absolute inset-0 bg-[linear-gradient(360deg,_var(--neutral-900)_0%,_transparent_100%)] opacity-50"></div>
                   <div class="flex items-end h-full p-6 relative z-10 select-none">
-                    <a href="#" class="h5 text-theme-bg-paper select-none hover:underline">Optimizing Sales Processes with Data-Driven Insights.</a>
+                    <a href="#" class="h5 text-theme-bg-paper select-none hover:underline">Optimizing Risk Management with Machine Learning.</a>
                   </div>
                 </div>
               </div>
-              <div class="item">
+              <div class="item" data-aos="fade-up" data-aos-delay="600">
                 <div class="bg-[url('../images/blog/blog3.jpg')] relative h-[250px] sm:h-[300px] md:h-[410px] rounded-3xl sm:rounded-[32px] md:rounded-[40px] w-full overflow-hidden bg-cover bg-center">
                   <div class="absolute inset-0 bg-[linear-gradient(360deg,_var(--neutral-900)_0%,_transparent_100%)] opacity-50"></div>
                   <div class="flex items-end h-full p-6 relative z-10 select-none">
-                    <a href="#" class="h5 text-theme-bg-paper select-none hover:underline">Designing User Experiences That Delight Customers.</a>
+                    <a href="#" class="h5 text-theme-bg-paper select-none hover:underline">Designing Intuitive Interfaces for Financial Platforms.</a>
                   </div>
                 </div>
               </div>
@@ -344,103 +386,109 @@
         </div>
       </div>
     </section>
-      <section class="common-section">
-    <div class="container">
-      <div class="flex flex-col gap-6 sm:gap-8">
-        <div class="animate-y delay-reset flex flex-col gap-2 sm:gap-3 items-center text-center">
-          <h2>Exonoma 2025</h2>
-          <h6 class="text-theme-textsecondary max-w-[750px]">consectetur adipisicing elit. Dicta placeat nesciunt sit et evenietarchitecto minus pariatur! Molestiae, fugiat a.
-          </h6>
-        </div>
-        <div class="flex flex-col gap-3 lg:flex-row">
-          <div class="basis-full lg:basis-2/4 flex flex-col sm:flex-row gap-3">
-            <div class="basis-full md:basis-2/4">
-              <div
-                class="animate-y rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full p-4 sm:p-5 md:p-6">
-                <div class="flex flex-col h-full gap-1 items-center">
-                  <div class="flex flex-row items-end">
-                    <div class="h1">200</div>
-                    <div class="h3 text-theme-text-secondary mb-0.5 md:mb-1.5">+</div>
-                  </div>
-                  <p class="body1 text-center text-theme-textsecondary">Blocks</p>
-                </div>
-              </div>
-            </div>
-            <div class="basis-full md:basis-2/4">
-              <div
-                class="animate-y rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full p-4 sm:p-5 md:p-6">
-                <div class="flex flex-col h-full gap-1 items-center">
-                  <div class="flex flex-row items-end">
-                    <div class="h1">10</div>
-                    <div class="h3 text-theme-text-secondary mb-0.5 md:mb-1.5">+</div>
-                  </div>
-                  <p class="body1 text-center text-theme-textsecondary">Redy to use Pages</p>
-                </div>
-              </div>
-            </div>
+    <!-- [ Resource Center Section ] end -->
+
+    <!-- [ Exonoma 2025 Stats Section ] start -->
+    <section class="common-section">
+      <div class="container">
+        <div class="flex flex-col gap-6 sm:gap-8">
+          <div class="animate-y delay-reset flex flex-col gap-2 sm:gap-3 items-center text-center" data-aos="fade-up">
+            <h2>Exonoma: The Future of Finance</h2>
+            <h6 class="text-theme-textsecondary max-w-[750px]">Experience the next generation of investment with unparalleled precision and foresight.
+            </h6>
           </div>
-          <div class="basis-full lg:basis-2/4 flex flex-col sm:flex-row gap-3">
-            <div class="basis-full md:basis-2/4">
-              <div
-                class="animate-y rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full p-4 sm:p-5 md:p-6">
-                <div class="flex flex-col h-full gap-1 items-center">
-                  <div class="flex flex-row items-end">
-                    <div class="h1">7</div>
-                    <div class="h3 text-theme-text-secondary mb-0.5 md:mb-1.5">+</div>
+          <div class="flex flex-col gap-3 lg:flex-row">
+            <div class="basis-full lg:basis-2/4 flex flex-col sm:flex-row gap-3">
+              <div class="basis-full md:basis-2/4">
+                <div
+                  class="animate-y rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full p-4 sm:p-5 md:p-6" data-aos="zoom-in" data-aos-delay="100">
+                  <div class="flex flex-col h-full gap-1 items-center">
+                    <div class="flex flex-row items-end">
+                      <div class="h1 count-up" data-target="200">0</div>
+                      <div class="h3 text-theme-text-secondary mb-0.5 md:mb-1.5">+</div>
+                    </div>
+                    <p class="body1 text-center text-theme-textsecondary">AI Models Deployed</p>
                   </div>
-                  <p class="body1 text-center text-theme-textsecondary">Landing Demos</p>
+                </div>
+              </div>
+              <div class="basis-full md:basis-2/4">
+                <div
+                  class="animate-y rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full p-4 sm:p-5 md:p-6" data-aos="zoom-in" data-aos-delay="200">
+                  <div class="flex flex-col h-full gap-1 items-center">
+                    <div class="flex flex-row items-end">
+                      <div class="h1 count-up" data-target="10">0</div>
+                      <div class="h3 text-theme-text-secondary mb-0.5 md:mb-1.5">+</div>
+                    </div>
+                    <p class="body1 text-center text-theme-textsecondary">Global Market Coverage</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="basis-full md:basis-2/4">
-              <div
-                class="animate-y rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full p-4 sm:p-5 md:p-6">
-                <div class="flex flex-col h-full gap-1 items-center">
-                  <div class="flex flex-row items-end">
-                    <div class="h1">1200</div>
-                    <div class="h3 text-theme-text-secondary mb-0.5 md:mb-1.5">+</div>
+            <div class="basis-full lg:basis-2/4 flex flex-col sm:flex-row gap-3">
+              <div class="basis-full md:basis-2/4">
+                <div
+                  class="animate-y rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full p-4 sm:p-5 md:p-6" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="flex flex-col h-full gap-1 items-center">
+                    <div class="flex flex-row items-end">
+                      <div class="h1 count-up" data-target="7">0</div>
+                      <div class="h3 text-theme-text-secondary mb-0.5 md:mb-1.5">+</div>
+                    </div>
+                    <p class="body1 text-center text-theme-textsecondary">Years of Market Data</p>
                   </div>
-                  <p class="body1 text-center text-theme-textsecondary">Hours Saved</p>
+                </div>
+              </div>
+              <div class="basis-full md:basis-2/4">
+                <div
+                  class="animate-y rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full p-4 sm:p-5 md:p-6" data-aos="zoom-in" data-aos-delay="400">
+                  <div class="flex flex-col h-full gap-1 items-center">
+                    <div class="flex flex-row items-end">
+                      <div class="h1 count-up" data-target="1200">0</div>
+                      <div class="h3 text-theme-text-secondary mb-0.5 md:mb-1.5">+</div>
+                    </div>
+                    <p class="body1 text-center text-theme-textsecondary">Optimized Trading Hours</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-<section class="common-section">
+    </section>
+    <!-- [ Exonoma 2025 Stats Section ] end -->
+
+    <!-- [ Cloud Infrastructure & Features Section ] start -->
+    <section class="common-section">
       <div class="container">
         <div class="flex flex-col gap-3">
           <div class="flex flex-col sm:flex-row gap-3">
             <div class="basis-full sm:basis-6/12">
               <div class="flex flex-col gap-5 justify-between h-full">
-                <div class="flex flex-col gap-2 sm:gap-3">
-                  <h2>Monitor your cloud infrastructure in real-time.</h2>
+                <div class="flex flex-col gap-2 sm:gap-3" data-aos="fade-right">
+                  <h2>Monitor your AI-driven infrastructure in real-time.</h2>
                   <h6 class="text-theme-textsecondary max-w-[750px]">
-                    Gain insights into performance metrics and proactively address issues for uninterrupted operations.
+                    Gain deep insights into performance metrics and proactively address anomalies for uninterrupted, high-frequency operations.
                   </h6>
                 </div>
                 <div class="flex flex-row gap-3">
-                  <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full basis-1/2">
+                  <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full basis-1/2" data-aos="fade-up" data-aos-delay="100">
                     <div class="p-3 sm:4 md:p-6 flex flex-col items-start h-full gap-9 sm:gap-8">
                       <div class="w-[60px] h-[60px] bg-neutral-300 rounded-full flex items-center justify-center">
                         <i class="ti ti-chart-histogram text-2xl leading-none text-primary-500"></i>
                       </div>
                       <div class="flex flex-col gap-2 sm:gap-3 grow">
-                        <h4>Parallel Processing</h4>
-                        <p class="body1 text-theme-textsecondary">Process data in parallel, significantly boosting data processing speed.</p>
+                        <h4>Quantum Processing</h4>
+                        <p class="body1 text-theme-textsecondary">Leverage parallel processing for ultra-fast data analysis and decision-making.</p>
                       </div>
                     </div>
                   </div>
-                  <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full basis-1/2">
+                  <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full basis-1/2" data-aos="fade-up" data-aos-delay="200">
                     <div class="p-3 sm:4 md:p-6 flex flex-col items-start h-full gap-9 sm:gap-8">
                       <div class="w-[60px] h-[60px] bg-neutral-300 rounded-full flex items-center justify-center">
                         <i class="ti ti-devices-code text-2xl leading-none text-primary-500"></i>
                       </div>
                       <div class="flex flex-col gap-2 sm:gap-3 grow">
-                        <h4>Cross-Platform</h4>
-                        <p class="body1 text-theme-textsecondary">Compatibility with various platforms for versatile data processing.</p>
+                        <h4>Cross-Market Adaptability</h4>
+                        <p class="body1 text-theme-textsecondary">Seamless compatibility across diverse financial markets for versatile strategy deployment.</p>
                       </div>
                     </div>
                   </div>             
@@ -448,7 +496,7 @@
               </div>
             </div>
             <div class="basis-full sm:basis-6/12">
-              <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden flex flex-col h-full">
+              <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden flex flex-col h-full" data-aos="fade-left">
                 <div class="p-6 sm:p-8 md:p-10 min-h-full h-[343px] sm:h-[445px] md:h-[530px]">
                   <div class="h-full ltr:rounded-l-xl rtl:rounded-r-xl bg-center bg-contain bg-no-repeat bg-[url('../images/graphics/ai/graphics3-light.svg')] dark:bg-[url('../images/graphics/ai/graphics3-dark.svg')]"></div>
                 </div>
@@ -457,7 +505,7 @@
           </div>
           <div class="flex flex-col sm:flex-row gap-3">
             <div class="basis-full sm:basis-6/12">
-              <div class="pt-14 rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden flex flex-col items-center gap-6 h-full">
+              <div class="pt-14 rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden flex flex-col items-center gap-6 h-full" data-aos="fade-up" data-aos-delay="300">
                 <div class="flex flex-col items-center gap-2">
                   <div class="flex flex-col items-center gap-1 dir">
                     <div class="flex -space-x-[14px] *:w-[42px] *:h-[42px] *:rounded-full *:border *:border-theme-bg-paper">
@@ -467,7 +515,7 @@
                       <img src="../assets/images/user/avatar4.png" alt="img" class="z-10">
                       <img src="../assets/images/user/avatar5.png" alt="img" class="z-0">
                     </div>
-                    <h6 class="subtitle2">10k+ Reviews (4.5 out of 5)</h6>
+                    <h6 class="subtitle2">10k+ Verified Reviews (4.9 out of 5)</h6>
                   </div>
                   <div class="text-primary-500">
                     <!-- [ wawe image ] -->
@@ -489,33 +537,33 @@
             <div class="basis-full sm:basis-6/12">
               <div class="flex flex-col gap-3 justify-between h-full">
                 <div class="flex flex-row gap-3">
-                  <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full basis-1/2">
+                  <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full basis-1/2" data-aos="fade-up" data-aos-delay="400">
                     <div class="p-3 sm:4 md:p-6 flex flex-col items-start h-full gap-9 sm:gap-8">
                       <div class="w-[60px] h-[60px] bg-neutral-300 rounded-full flex items-center justify-center">
                         <i class="ti ti-settings-up text-2xl leading-none text-primary-500"></i>
                       </div>
                       <div class="flex flex-col gap-2 sm:gap-3 grow">
-                        <h4>Automated Scaling</h4>
-                        <p class="body1 text-theme-textsecondary">Process data in parallel, significantly boosting data processing speed.</p>
+                        <h4>Adaptive Scaling</h4>
+                        <p class="body1 text-theme-textsecondary">Dynamically adjusts resource allocation for optimal performance during market volatility.</p>
                       </div>
                     </div>
                   </div>
-                  <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full basis-1/2">
+                  <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full basis-1/2" data-aos="fade-up" data-aos-delay="500">
                     <div class="p-3 sm:4 md:p-6 flex flex-col items-start h-full gap-9 sm:gap-8">
                       <div class="w-[60px] h-[60px] bg-neutral-300 rounded-full flex items-center justify-center">
                         <i class="ti ti-database-cog text-2xl leading-none text-primary-500"></i>
                       </div>
                       <div class="flex flex-col gap-2 sm:gap-3 grow">
-                        <h4>Real-Time</h4>
-                        <p class="body1 text-theme-textsecondary">Compatibility with various platforms for versatile data processing.</p>
+                        <h4>Real-Time Intelligence</h4>
+                        <p class="body1 text-theme-textsecondary">Instantaneous data processing and analysis for immediate strategic adjustments.</p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden">
+                <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden" data-aos="fade-up" data-aos-delay="600">
                   <div class="p-4 sm:p-8 flex flex-col items-start h-full gap-8 sm:gap-14">
-                    <h6 class="text-theme-textsecondary max-w-[530px]">Gain insights into performance metrics and proactively address issues for uninterrupted operations.</h6>
-                    <button class="btn btn-primary btn-md capitalize">
+                    <h6 class="text-theme-textsecondary max-w-[530px]">Gain unparalleled insights into market dynamics and proactively capitalize on emerging opportunities.</h6>
+                    <button class="btn btn-primary btn-md capitalize hover-scale-btn">
                       <span class="flex items-center gap-2 ltr:-ml-1 rtl:-mr-1">
                         <i class="ti ti-sparkles text-base leading-none"></i>
                         Explore all Features
@@ -529,8 +577,9 @@
         </div>
       </div>
     </section>
+    <!-- [ Cloud Infrastructure & Features Section ] end -->
 
-
+    <!-- [ Workflow & Metrics Section ] start -->
     <section class="common-section">
       <div class="container">
         <div
@@ -538,40 +587,40 @@
         >
           <div class="absolute inset-0 bg-neutral-100/75 z-0"></div>
           <div class="relative z-10 flex flex-col gap-6 sm:gap-8">
-            <div class="flex flex-col items-center gap-4 sm:gap-6 text-center">
+            <div class="flex flex-col items-center gap-4 sm:gap-6 text-center" data-aos="fade-up">
               <div class="flex flex-col items-center gap-1">
-                <h4>Made to fit your workflow, you are in control</h4>
+                <h4>Engineered for your success, total control at your fingertips</h4>
               </div>
             </div>
             <div class="flex flex-row items-center justify-evenly gap-0">
-              <div class="flex flex-col items-center justify-center gap-2 w-40 sm:w-[246px] text-center">
+              <div class="flex flex-col items-center justify-center gap-2 w-40 sm:w-[246px] text-center" data-aos="zoom-in" data-aos-delay="100">
                 <div class="flex flex-row items-end">
-                  <p class="h1">90</p>
+                  <p class="h1 count-up" data-target="90">0</p>
                   <div class="h2">%</div>
                 </div>
-                <p class="body1 text-theme-textsecondary">Power of AI for navigation and communication</p>
+                <p class="body1 text-theme-textsecondary">Enhanced precision in AI-driven market predictions</p>
               </div>
               <div class="mx-3 sm:mx-10 self-stretch h-auto">
                 <div class="border-l border-theme-divider h-full">
                 </div>
               </div>
-              <div class="flex flex-col items-center justify-center gap-2 w-40 sm:w-[246px] text-center">
+              <div class="flex flex-col items-center justify-center gap-2 w-40 sm:w-[246px] text-center" data-aos="zoom-in" data-aos-delay="200">
                 <div class="flex flex-row items-end">
-                  <p class="h1">10</p>
+                  <p class="h1 count-up" data-target="10">0</p>
                   <div class="h2">x</div>
                 </div>
-                <p class="body1 text-theme-textsecondary">Achieving faster sales through streamlined processes.</p>
+                <p class="body1 text-theme-textsecondary">Accelerated trade execution through optimized algorithms.</p>
               </div>
               <div class="mx-3 sm:mx-10 self-stretch h-auto hidden sm:block">
                 <div class="border-l border-theme-divider h-full">
                 </div>
               </div>
-              <div class="hidden sm:flex flex-col items-center justify-center gap-2 w-40 sm:w-[246px] text-center">
+              <div class="hidden sm:flex flex-col items-center justify-center gap-2 w-40 sm:w-[246px] text-center" data-aos="zoom-in" data-aos-delay="300">
                 <div class="flex flex-row items-end">
-                  <p class="h1">25</p>
+                  <p class="h1 count-up" data-target="25">0</p>
                   <div class="h2">%</div>
                 </div>
-                <p class="body1 text-theme-textsecondary">Reduction in overall costs, attributed to optimized</p>
+                <p class="body1 text-theme-textsecondary">Reduction in operational costs, attributed to AI efficiency</p>
               </div>
             </div>
             <div class="flex sm:hidden flex-col items-center gap-4 sm:gap-6 text-center">
@@ -579,9 +628,9 @@
                 <div class="border-t border-theme-divider w-full">
                 </div>
               </div>
-              <div class="flex flex-col items-center justify-center gap-2 w-full text-center">
+              <div class="flex flex-col items-center justify-center gap-2 w-full text-center" data-aos="zoom-in" data-aos-delay="400">
                 <div class="flex flex-row items-end">
-                  <p class="h1">25</p>
+                  <p class="h1 count-up" data-target="25">0</p>
                   <div class="h2">%</div>
                 </div>
                 <p class="body1 text-theme-textsecondary">Reduction in overall costs, attributed to optimized</p>
@@ -591,21 +640,21 @@
         </div>
       </div>
     </section>
+    <!-- [ Workflow & Metrics Section ] end -->
 
-    
-
-     <section class="common-section">
+    <!-- [ Advanced Resource Center Section ] start -->
+    <section class="common-section">
       <div class="container">
         <div class="flex flex-col gap-6 sm:gap-8">
-          <div class="flex flex-col items-center text-center gap-2 sm:gap-3">
-            <h2>Resource Center</h2>
+          <div class="flex flex-col items-center text-center gap-2 sm:gap-3" data-aos="fade-up">
+            <h2>Advanced Resource Center</h2>
             <h6 class="text-theme-textsecondary max-w-[750px]">
-              Discover the features that will transform your customer relationships
+              Dive deeper into our comprehensive library of articles, whitepapers, and case studies.
             </h6>
           </div>
           <div class="grid grid-cols-12 gap-3">
             <div class="col-span-12 sm:col-span-5">
-              <div class="bg-neutral-100 rounded-3xl sm:rounded-[32px] md:rounded-[40px] overflow-hidden h-full">
+              <div class="bg-neutral-100 rounded-3xl sm:rounded-[32px] md:rounded-[40px] overflow-hidden h-full" data-aos="fade-right" data-aos-delay="100">
                 <div class="h-[234px] sm:h-[208px] lg:h-[326px] rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-center bg-cover bg-no-repeat bg-[url('../images/blog/blog7.png')]"></div>
                 <div class="p-5 sm:p-6 md:p-8 flex flex-col gap-3 items-start">
                   <div class="flex flex-col gap-3">
@@ -624,7 +673,7 @@
             </div>
             <div class="col-span-12 sm:col-span-7">
               <div class="flex flex-col gap-3">
-                <div class="bg-neutral-100 rounded-3xl sm:rounded-[32px] md:rounded-[40px] overflow-hidden">
+                <div class="bg-neutral-100 rounded-3xl sm:rounded-[32px] md:rounded-[40px] overflow-hidden" data-aos="fade-left" data-aos-delay="200">
                    <div class="flex flex-row min-h-[116px] sm:min-h-[168px] md:min-h-[174px] h-full">
                      <div class="min-w-[116px] sm:min-w-[168px] lg:min-w-[174px] shrink-0 rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-center bg-cover bg-no-repeat bg-[url('../images/blog/blog8.png')]"></div>
                      <div class="grow">
@@ -632,7 +681,7 @@
                          <p class="caption text-theme-text-secondary text-nowrap">10 Feb 2024 · 3 Min Read</p>
                          <a href="##" class="group flex flex-row gap-3 text-theme-text-primary hover:text-primary-500">
                            <div class="grow">
-                             <h4 class="line-clamp-2 text-theme-text-primary hover:text-primary-500 group-hover:text-primary-500">The power of SaaS and how it can revolutionize.</h4>
+                             <h4 class="line-clamp-2 text-theme-text-primary hover:text-primary-500 group-hover:text-primary-500">The power of AI and how it can revolutionize finance.</h4>
                            </div>
                            <div class="shrink-0">
                              <i class="ti ti-arrow-up-right text-[24px] leading-none"></i>
@@ -642,7 +691,7 @@
                      </div>
                    </div>
                 </div>
-                <div class="bg-neutral-100 rounded-3xl sm:rounded-[32px] md:rounded-[40px] overflow-hidden">
+                <div class="bg-neutral-100 rounded-3xl sm:rounded-[32px] md:rounded-[40px] overflow-hidden" data-aos="fade-left" data-aos-delay="300">
                   <div class="flex flex-row min-h-[116px] sm:min-h-[168px] md:min-h-[174px] h-full">
                     <div class="min-w-[116px] sm:min-w-[168px] lg:min-w-[174px] shrink-0 rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-center bg-cover bg-no-repeat bg-[url('../images/graphics/ai/background1.svg')]"></div>
                     <div class="grow">
@@ -650,7 +699,7 @@
                         <p class="caption text-theme-text-secondary text-nowrap">25 Feb 2024 · 10 Min Read</p>
                         <a href="##" class="group flex flex-row gap-3 text-theme-text-primary hover:text-primary-500">
                           <div class="grow">
-                            <h4 class="line-clamp-2 text-theme-text-primary hover:text-primary-500 group-hover:text-primary-500">Maximize Efficiency and Productivity Compression with Our Comprehensive CRM Solution</h4>
+                            <h4 class="line-clamp-2 text-theme-text-primary hover:text-primary-500 group-hover:text-primary-500">Maximize Efficiency and Productivity with Our AI-Powered CRM Solution</h4>
                           </div>
                           <div class="shrink-0">
                             <i class="ti ti-arrow-up-right text-[24px] leading-none"></i>
@@ -660,15 +709,15 @@
                     </div>
                   </div>
                 </div>
-                <a class="hidden lg:flex p-3 sm:p-6 md:p-[30px] text-primary-500 hover:bg-neutral-200 gap-2 items-center justify-center h5 bg-neutral-100 rounded-3xl sm:rounded-[32px] md:rounded-[40px] overflow-hidden transition-all duration-500" href="##">
-                  View All
+                <a class="hidden lg:flex p-3 sm:p-6 md:p-[30px] text-primary-500 hover:bg-neutral-200 gap-2 items-center justify-center h5 bg-neutral-100 rounded-3xl sm:rounded-[32px] md:rounded-[40px] overflow-hidden transition-all duration-500 hover-scale-btn" href="##" data-aos="fade-up" data-aos-delay="400">
+                  View All Insights
                   <i class="ti ti-arrow-narrow-right text-[40px]"></i>
                 </a>
               </div>
             </div>
             <div class="col-span-12">
-              <a class="flex lg:hidden p-3 sm:p-6 md:p-[30px] text-primary-500 hover:bg-neutral-200 gap-2 items-center justify-center h5 bg-neutral-100 rounded-3xl sm:rounded-[32px] md:rounded-[40px] overflow-hidden transition-all duration-500" href="##">
-                View All
+              <a class="flex lg:hidden p-3 sm:p-6 md:p-[30px] text-primary-500 hover:bg-neutral-200 gap-2 items-center justify-center h5 bg-neutral-100 rounded-3xl sm:rounded-[32px] md:rounded-[40px] overflow-hidden transition-all duration-500 hover-scale-btn" href="##" data-aos="fade-up" data-aos-delay="400">
+                View All Insights
                 <i class="ti ti-arrow-narrow-right text-[40px]"></i>
               </a>
             </div>
@@ -676,316 +725,322 @@
         </div>
       </div>
     </section>
+    <!-- [ Advanced Resource Center Section ] end -->
 
-        <section class="common-section">
-    <div class="container">
-      <div class="flex flex-col gap-6 sm:gap-8">
-        <div class="animate-y delay-reset flex flex-col items-center text-center gap-2 sm:gap-3">
-          <h2>See What Our Customers Are Saying</h2>
-          <h6 class="text-theme-textsecondary max-w-[550px] lg:max-w-[700px]">Trusted by thousands of users worldwide,
-            hear how Phoenixcoded helps bring their projects to life.</h6>
-        </div>
-        <div class="animate-y columns-2 sm:columns-3 gap-3 *:mb-3 relative">
-          <div class="absolute inset-0 !m-0 z-10 bg-[radial-gradient(146.46%_68.12%_at_50%_29.86%,_transparent_0%,_var(--theme-bg-default)_100%)]"></div>
-          <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden">
-            <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
-              <div class="flex flex-row gap-[6px] text-base leading-none">
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-              </div>
-              <div class="flex gap-2 flex-col justify-center">
-                <h6 class="subtitle1">Customer Support</h6>
-                <p class="body1 text-theme-textsecondary">Very organized code base. Love the ability reuse components for many different use cases. Customer service is very active and willing to take suggestions for new features!</p>
-              </div>
-              <div class="flex gap-1 flex-col justify-center">
-                <h6 class="subtitle1">Matt S.</h6>
-                <div class="body2 text-theme-text-secondary"></div>
+    <!-- [ Customer Testimonials Section ] start -->
+    <section class="common-section">
+      <div class="container">
+        <div class="flex flex-col gap-6 sm:gap-8">
+          <div class="animate-y delay-reset flex flex-col items-center text-center gap-2 sm:gap-3" data-aos="fade-up">
+            <h2>Hear From Our Global Investors</h2>
+            <h6 class="text-theme-textsecondary max-w-[550px] lg:max-w-[700px]">Trusted by leading financial institutions and individual investors worldwide, discover how Exonoma transforms investment strategies.</h6>
+          </div>
+          <div class="animate-y columns-2 sm:columns-3 gap-3 *:mb-3 relative">
+            <div class="absolute inset-0 !m-0 z-10 bg-[radial-gradient(146.46%_68.12%_at_50%_29.86%,_transparent_0%,_var(--theme-bg-default)_100%)]"></div>
+            <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+              <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
+                <div class="flex flex-row gap-[6px] text-base leading-none">
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                </div>
+                <div class="flex gap-2 flex-col justify-center">
+                  <h6 class="subtitle1">Exceptional Support</h6>
+                  <p class="body1 text-theme-textsecondary">"The Exonoma team provides unparalleled support. Their responsiveness and willingness to integrate feedback are truly impressive. A game-changer for our portfolio management!"</p>
+                </div>
+                <div class="flex gap-1 flex-col justify-center">
+                  <h6 class="subtitle1">Matt S.</h6>
+                  <div class="body2 text-theme-text-secondary">Institutional Investor</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden">
-            <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
-              <div class="flex flex-row gap-[6px] text-base leading-none">
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-              </div>
-              <div class="flex gap-2 flex-col justify-center">
-                <h6 class="subtitle1">Code Quality</h6>
-                <p class="body1 text-theme-textsecondary">This template is awesome! It's super easy to get started, uses Material UI perfectly, and the folder structure is a breeze to navigate. Plus, it's really affordable. The coding style is top-notch too, making everything clear and easy to grasp. Surprisingly, I haven't even needed the documentation to set it up. Big shoutout to the team behind this gem. Can't wait to see what else they come up with! Definitely recommend giving it a try!</p>
-              </div>
-              <div class="flex gap-1 flex-col justify-center">
-                <h6 class="subtitle1">Piyu.</h6>
-                <div class="body2 text-theme-text-secondary"></div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden">
-            <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
-              <div class="flex flex-row gap-[6px] text-base leading-none">
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-              </div>
-              <div class="flex gap-2 flex-col justify-center">
-                <h6 class="subtitle1">Feature Availability</h6>
-                <p class="body1 text-theme-textsecondary">For developers like me, this is the total package!</p>
-              </div>
-              <div class="flex gap-1 flex-col justify-center">
-                <h6 class="subtitle1">Suma.</h6>
-                <div class="body2 text-theme-text-secondary">Developer</div>
+            <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+              <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
+                <div class="flex flex-row gap-[6px] text-base leading-none">
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                </div>
+                <div class="flex gap-2 flex-col justify-center">
+                  <h6 class="subtitle1">Revolutionary AI</h6>
+                  <p class="body1 text-theme-textsecondary">"Exonoma's AI is simply revolutionary. It's incredibly easy to integrate, provides precise market predictions, and the underlying architecture is brilliantly designed. This platform has significantly boosted our trading efficiency. Highly recommended!"</p>
+                </div>
+                <div class="flex gap-1 flex-col justify-center">
+                  <h6 class="subtitle1">Piyu.</h6>
+                  <div class="body2 text-theme-text-secondary">Hedge Fund Manager</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden">
-            <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
-              <div class="flex flex-row gap-[6px] text-base leading-none">
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-              </div>
-              <div class="flex gap-2 flex-col justify-center">
-                <h6 class="subtitle1">Customizability</h6>
-                <p class="body1 text-theme-textsecondary">We integrated SaaSable into our project and are extremely pleased with the results. The code quality is excellent, and the architecture is thoughtfully designed. The components are not only visually appealing but also flexible and easily customizable, allowing us to save significant development time. This enabled us to focus fully on essential aspects of our project. Moreover, the support is exceptional-always quick, helpful, and responsive. Highly recommended for any professional project!</p>
-              </div>
-              <div class="flex gap-1 flex-col justify-center">
-                <h6 class="subtitle1">Dmitri H.</h6>
-                <div class="body2 text-theme-text-secondary"></div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden">
-            <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
-              <div class="flex flex-row gap-[6px] text-base leading-none">
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-              </div>
-              <div class="flex gap-2 flex-col justify-center">
-                <h6 class="subtitle1">Customer Support!</h6>
-                <p class="body1 text-theme-textsecondary">The support by Phoenix team is timely and professional. Their dedication to improve their product is amazing. The code is standard and has high quality. The variety of components is pretty good but there is room for adding other customized components and features.</p>
-              </div>
-              <div class="flex gap-1 flex-col justify-center">
-                <h6 class="subtitle1">Indi.</h6>
-                <div class="body2 text-theme-text-secondary"></div>
+            <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden" data-aos="fade-up" data-aos-delay="300">
+              <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
+                <div class="flex flex-row gap-[6px] text-base leading-none">
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                </div>
+                <div class="flex gap-2 flex-col justify-center">
+                  <h6 class="subtitle1">Unmatched Precision</h6>
+                  <p class="body1 text-theme-textsecondary">"For serious investors, Exonoma is the ultimate tool. Its predictive accuracy is unmatched, giving us a significant edge in volatile markets."</p>
+                </div>
+                <div class="flex gap-1 flex-col justify-center">
+                  <h6 class="subtitle1">Suma.</h6>
+                  <div class="body2 text-theme-text-secondary">Senior Analyst</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden">
-            <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
-              <div class="flex flex-row gap-[6px] text-base leading-none">
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-              </div>
-              <div class="flex gap-2 flex-col justify-center">
-                <h6 class="subtitle1">Code Quality</h6>
-                <p class="body1 text-theme-textsecondary">Works as described</p>
-              </div>
-              <div class="flex gap-1 flex-col justify-center">
-                <h6 class="subtitle1">Pat4.</h6>
-                <div class="body2 text-theme-text-secondary"></div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden">
-            <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
-              <div class="flex flex-row gap-[6px] text-base leading-none">
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-              </div>
-              <div class="flex gap-2 flex-col justify-center">
-                <h6 class="subtitle1">Design Quality</h6>
-                <p class="body1 text-theme-textsecondary">I am thoroughly impressed with the customer support, code quality, modularity, and quality of the web components. This has been a tremendous support, saving us months of time designing and architecting the project, and significantly enhancing our development efficiency. Truly a valuable resource for anyone looking to build robust solutions.</p>
-              </div>
-              <div class="flex gap-1 flex-col justify-center">
-                <h6 class="subtitle1">Puneet P.</h6>
-                <div class="body2 text-theme-text-secondary"></div>
+            <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden" data-aos="fade-up" data-aos-delay="400">
+              <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
+                <div class="flex flex-row gap-[6px] text-base leading-none">
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                </div>
+                <div class="flex gap-2 flex-col justify-center">
+                  <h6 class="subtitle1">Seamless Integration</h6>
+                  <p class="body1 text-theme-textsecondary">"Integrating Exonoma into our existing systems was effortless. The platform's flexibility and customizable features saved us months of development time, allowing us to focus on core strategy. Their support team is also incredibly responsive."</p>
+                </div>
+                <div class="flex gap-1 flex-col justify-center">
+                  <h6 class="subtitle1">Dmitri H.</h6>
+                  <div class="body2 text-theme-text-secondary">FinTech CTO</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden">
-            <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
-              <div class="flex flex-row gap-[6px] text-base leading-none">
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-              </div>
-              <div class="flex gap-2 flex-col justify-center">
-                <h6 class="subtitle1">Code Quality</h6>
-                <p class="body1 text-theme-textsecondary">Beautiful product, very well structured, very clear, very easy to understand and to use. Thank you so much!.</p>
-              </div>
-              <div class="flex gap-1 flex-col justify-center">
-                <h6 class="subtitle1">Thoma.</h6>
-                <div class="body2 text-theme-text-secondary"></div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden">
-            <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
-              <div class="flex flex-row gap-[6px] text-base leading-none">
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-              </div>
-              <div class="flex gap-2 flex-col justify-center">
-                <h6 class="subtitle1">Design is Astonishing</h6>
-                <p class="body1 text-theme-textsecondary">Code quality is amazing. Design is astonishing. very easy to customize and any developer can use it with ease.</p>
-              </div>
-              <div class="flex gap-1 flex-col justify-center">
-                <h6 class="subtitle1">Shah.</h6>
-                <div class="body2 text-theme-text-secondary"></div>
+            <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden" data-aos="fade-up" data-aos-delay="500">
+              <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
+                <div class="flex flex-row gap-[6px] text-base leading-none">
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                </div>
+                <div class="flex gap-2 flex-col justify-center">
+                  <h6 class="subtitle1">Dedicated Partnership</h6>
+                  <p class="body1 text-theme-textsecondary">"The Exonoma team's dedication to product improvement is evident. Their code quality is top-tier, and while the component variety is excellent, they are always open to suggestions for new features. A truly collaborative partnership."</p>
+                </div>
+                <div class="flex gap-1 flex-col justify-center">
+                  <h6 class="subtitle1">Indi.</h6>
+                  <div class="body2 text-theme-text-secondary">Portfolio Manager</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden">
-            <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
-              <div class="flex flex-row gap-[6px] text-base leading-none">
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
-                <i class="ti ti-star-filled text-primary-500"></i>
+            <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden" data-aos="fade-up" data-aos-delay="600">
+              <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
+                <div class="flex flex-row gap-[6px] text-base leading-none">
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                </div>
+                <div class="flex gap-2 flex-col justify-center">
+                  <h6 class="subtitle1">Reliable Performance</h6>
+                  <p class="body1 text-theme-textsecondary">"Exonoma performs exactly as described, consistently delivering reliable insights and execution. A solid foundation for any serious investor."</p>
+                </div>
+                <div class="flex gap-1 flex-col justify-center">
+                  <h6 class="subtitle1">Pat4.</h6>
+                  <div class="body2 text-theme-text-secondary">Private Investor</div>
+                </div>
               </div>
-              <div class="flex gap-2 flex-col justify-center">
-                <h6 class="subtitle1">Customer Quality</h6>
-                <p class="body1 text-theme-textsecondary">The author is very nice and solved my problem immediately</p>
+            </div>
+            <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden" data-aos="fade-up" data-aos-delay="700">
+              <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
+                <div class="flex flex-row gap-[6px] text-base leading-none">
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                </div>
+                <div class="flex gap-2 flex-col justify-center">
+                  <h6 class="subtitle1">Superior Design</h6>
+                  <p class="body1 text-theme-textsecondary">"I am thoroughly impressed with Exonoma's intuitive design, robust code quality, and modular architecture. It has saved us months of development time, significantly enhancing our operational efficiency. A truly invaluable resource."</p>
+                </div>
+                <div class="flex gap-1 flex-col justify-center">
+                  <h6 class="subtitle1">Puneet P.</h6>
+                  <div class="body2 text-theme-text-secondary">Lead Quant Developer</div>
+                </div>
               </div>
-              <div class="flex gap-1 flex-col justify-center">
-                <h6 class="subtitle1">Richi.</h6>
-                <div class="body2 text-theme-text-secondary"></div>
+            </div>
+            <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden" data-aos="fade-up" data-aos-delay="800">
+              <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
+                <div class="flex flex-row gap-[6px] text-base leading-none">
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                </div>
+                <div class="flex gap-2 flex-col justify-center">
+                  <h6 class="subtitle1">Flawless Execution</h6>
+                  <p class="body1 text-theme-textsecondary">"A beautifully crafted product, exceptionally well-structured, clear, and incredibly easy to understand and use. Thank you so much for this powerful platform!"</p>
+                </div>
+                <div class="flex gap-1 flex-col justify-center">
+                  <h6 class="subtitle1">Thoma.</h6>
+                  <div class="body2 text-theme-text-secondary">Financial Strategist</div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden" data-aos="fade-up" data-aos-delay="900">
+              <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
+                <div class="flex flex-row gap-[6px] text-base leading-none">
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                </div>
+                <div class="flex gap-2 flex-col justify-center">
+                  <h6 class="subtitle1">Stunning Design</h6>
+                  <p class="body1 text-theme-textsecondary">"The code quality is exceptional, and the design is absolutely astonishing. It's very easy to customize, making it accessible for any developer."</p>
+                </div>
+                <div class="flex gap-1 flex-col justify-center">
+                  <h6 class="subtitle1">Shah.</h6>
+                  <div class="body2 text-theme-text-secondary">Blockchain Developer</div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full bg-neutral-100 rounded-2xl sm:rounded-3xl overflow-hidden" data-aos="fade-up" data-aos-delay="1000">
+              <div class="flex flex-col h-full justify-between gap-6 p-3 lg:p-4">
+                <div class="flex flex-row gap-[6px] text-base leading-none">
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                  <i class="ti ti-star-filled text-primary-500"></i>
+                </div>
+                <div class="flex gap-2 flex-col justify-center">
+                  <h6 class="subtitle1">Responsive Support</h6>
+                  <p class="body1 text-theme-textsecondary">"The Exonoma support team is incredibly helpful and resolved my inquiries immediately. Their commitment to user satisfaction is commendable."</p>
+                </div>
+                <div class="flex gap-1 flex-col justify-center">
+                  <h6 class="subtitle1">Richi.</h6>
+                  <div class="body2 text-theme-text-secondary">Crypto Trader</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
     </section>
-      <section class="common-section">
+    <!-- [ Customer Testimonials Section ] end -->
+
+    <!-- [ Integration Section ] start -->
+    <section class="common-section">
       <div class="container">
         <div class="bg-neutral-100 h-full rounded-3xl sm:rounded-[32px] md:rounded-[40px]">
           <div class="relative overflow-hidden rounded-3xl sm:rounded-[32px] md:rounded-[40px]">
             <div class="absolute inset-0 z-10 bg-[radial-gradient(51.92%_57.91%_at_50%_53.14%,_transparent_0%,_var(--neutral-100)_200%)]"></div>
             <div class="flex flex-row justify-center">
-              <div class="rounded-full p-px bg-[linear-gradient(transparent_0%,_var(--theme-bg-default)_100%)]">
+              <div class="rounded-full p-px bg-[linear-gradient(transparent_0%,_var(--theme-bg-default)_100%)]" data-aos="zoom-in" data-aos-delay="50">
                 <div class="bg-neutral-100 rounded-full w-[83px] sm:w-[105px] lg:w-[140px] h-[83px] sm:h-[105px] lg:h-[140px] flex items-center justify-center">
                   <img src="../assets/images/integration/asana.png" alt="image" class="w-6 sm:w-[30px] lg:w-10 h-6 sm:h-[30px] lg:h-10">
                 </div>
               </div>
-              <div class="rounded-full p-px bg-[linear-gradient(transparent_0%,_var(--theme-bg-default)_100%)]">
+              <div class="rounded-full p-px bg-[linear-gradient(transparent_0%,_var(--theme-bg-default)_100%)]" data-aos="zoom-in" data-aos-delay="100">
                 <div class="bg-neutral-100 rounded-full w-[83px] sm:w-[105px] lg:w-[140px] h-[83px] sm:h-[105px] lg:h-[140px] flex items-center justify-center">
                   <img src="../assets/images/integration/slack.png" alt="image" class="w-6 sm:w-[30px] lg:w-10 h-6 sm:h-[30px] lg:h-10">
                 </div>
               </div>
-              <div class="rounded-full p-px bg-[linear-gradient(transparent_0%,_var(--theme-bg-default)_100%)]">
+              <div class="rounded-full p-px bg-[linear-gradient(transparent_0%,_var(--theme-bg-default)_100%)]" data-aos="zoom-in" data-aos-delay="150">
                 <div class="bg-neutral-100 rounded-full w-[83px] sm:w-[105px] lg:w-[140px] h-[83px] sm:h-[105px] lg:h-[140px] flex items-center justify-center">
                   <img src="../assets/images/integration/intercom.png" alt="image" class="w-6 sm:w-[30px] lg:w-10 h-6 sm:h-[30px] lg:h-10">
                 </div>
               </div>
-              <div class="rounded-full p-px bg-[linear-gradient(transparent_0%,_var(--theme-bg-default)_100%)]">
+              <div class="rounded-full p-px bg-[linear-gradient(transparent_0%,_var(--theme-bg-default)_100%)]" data-aos="zoom-in" data-aos-delay="200">
                 <div class="bg-neutral-100 rounded-full w-[83px] sm:w-[105px] lg:w-[140px] h-[83px] sm:h-[105px] lg:h-[140px] flex items-center justify-center">
                   <img src="../assets/images/integration/paypal.png" alt="image" class="w-6 sm:w-[30px] lg:w-10 h-6 sm:h-[30px] lg:h-10">
                 </div>
               </div>
-              <div class="rounded-full p-px bg-[linear-gradient(transparent_0%,_var(--theme-bg-default)_100%)]">
+              <div class="rounded-full p-px bg-[linear-gradient(transparent_0%,_var(--theme-bg-default)_100%)]" data-aos="zoom-in" data-aos-delay="250">
                 <div class="bg-neutral-100 rounded-full w-[83px] sm:w-[105px] lg:w-[140px] h-[83px] sm:h-[105px] lg:h-[140px] flex items-center justify-center">
                   <img src="../assets/images/integration/dropbox.png" alt="image" class="w-6 sm:w-[30px] lg:w-10 h-6 sm:h-[30px] lg:h-10">
                 </div>
               </div>
-              <div class="rounded-full p-px bg-[linear-gradient(transparent_0%,_var(--theme-bg-default)_100%)]">
+              <div class="rounded-full p-px bg-[linear-gradient(transparent_0%,_var(--theme-bg-default)_100%)]" data-aos="zoom-in" data-aos-delay="300">
                 <div class="bg-neutral-100 rounded-full w-[83px] sm:w-[105px] lg:w-[140px] h-[83px] sm:h-[105px] lg:h-[140px] flex items-center justify-center">
                   <img src="../assets/images/integration/jira.png" alt="image" class="w-6 sm:w-[30px] lg:w-10 h-6 sm:h-[30px] lg:h-10">
                 </div>
               </div>
-              <div class="rounded-full p-px bg-[linear-gradient(transparent_0%,_var(--theme-bg-default)_100%)]">
+              <div class="rounded-full p-px bg-[linear-gradient(transparent_0%,_var(--theme-bg-default)_100%)]" data-aos="zoom-in" data-aos-delay="350">
                 <div class="bg-neutral-100 rounded-full w-[83px] sm:w-[105px] lg:w-[140px] h-[83px] sm:h-[105px] lg:h-[140px] flex items-center justify-center">
                   <img src="../assets/images/integration/zoom.png" alt="image" class="w-6 sm:w-[30px] lg:w-10 h-6 sm:h-[30px] lg:h-10">
                 </div>
               </div>
             </div>
             <div class="flex flex-row justify-center -mt-3 sm:-mt-3.5 lg:-mt-5">
-              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]">
+              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]" data-aos="zoom-in" data-aos-delay="400">
                 <div class="bg-neutral-100 rounded-full w-[83px] sm:w-[105px] lg:w-[140px] h-[83px] sm:h-[105px] lg:h-[140px] flex items-center justify-center">
                   <img src="../assets/images/integration/skype.png" alt="image" class="w-6 sm:w-[30px] lg:w-10 h-6 sm:h-[30px] lg:h-10">
                 </div>
               </div>
-              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]">
+              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]" data-aos="zoom-in" data-aos-delay="450">
                 <div class="bg-neutral-100 rounded-full w-[83px] sm:w-[105px] lg:w-[140px] h-[83px] sm:h-[105px] lg:h-[140px] flex items-center justify-center">
                   <img src="../assets/images/integration/master-card.png" alt="image" class="w-6 sm:w-[30px] lg:w-10 h-6 sm:h-[30px] lg:h-10">
                 </div>
               </div>
-              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]">
+              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]" data-aos="zoom-in" data-aos-delay="500">
                 <div class="bg-neutral-100 rounded-full w-[83px] sm:w-[105px] lg:w-[140px] h-[83px] sm:h-[105px] lg:h-[140px] flex items-center justify-center">
                   <img src="../assets/images/integration/trip-advicer.png" alt="image" class="w-6 sm:w-[30px] lg:w-10 h-6 sm:h-[30px] lg:h-10">
                 </div>
               </div>
-              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]">
+              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]" data-aos="zoom-in" data-aos-delay="550">
                 <div class="bg-neutral-100 rounded-full w-[83px] sm:w-[105px] lg:w-[140px] h-[83px] sm:h-[105px] lg:h-[140px] flex items-center justify-center">
                   <img src="../assets/images/integration/google-drive.png" alt="image" class="w-6 sm:w-[30px] lg:w-10 h-6 sm:h-[30px] lg:h-10">
                 </div>
               </div>
-              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]">
+              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]" data-aos="zoom-in" data-aos-delay="600">
                 <div class="bg-neutral-100 rounded-full w-[83px] sm:w-[105px] lg:w-[140px] h-[83px] sm:h-[105px] lg:h-[140px] flex items-center justify-center">
                   <img src="../assets/images/integration/loom.png" alt="image" class="w-6 sm:w-[30px] lg:w-10 h-6 sm:h-[30px] lg:h-10">
                 </div>
               </div>
-              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]">
+              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]" data-aos="zoom-in" data-aos-delay="650">
                 <div class="bg-neutral-100 rounded-full w-[83px] sm:w-[105px] lg:w-[140px] h-[83px] sm:h-[105px] lg:h-[140px] flex items-center justify-center">
                   <img src="../assets/images/integration/mail-chimp.png" alt="image" class="w-6 sm:w-[30px] lg:w-10 h-6 sm:h-[30px] lg:h-10">
                 </div>
               </div>
-              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]">
+              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]" data-aos="zoom-in" data-aos-delay="700">
                 <div class="bg-neutral-100 rounded-full w-[83px] sm:w-[105px] lg:w-[140px] h-[83px] sm:h-[105px] lg:h-[140px] flex items-center justify-center">
                   <img src="../assets/images/integration/messenger-facebook.png" alt="image" class="w-6 sm:w-[30px] lg:w-10 h-6 sm:h-[30px] lg:h-10">
                 </div>
               </div>
-              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]">
+              <div class="rounded-full p-px bg-[linear-gradient(var(--theme-bg-default)_0%,_transparent_100%)]" data-aos="zoom-in" data-aos-delay="750">
                 <div class="bg-neutral-100 rounded-full w-[83px] sm:w-[105px] lg:w-[140px] h-[83px] sm:h-[105px] lg:h-[140px] flex items-center justify-center">
                   <img src="../assets/images/integration/notion.png" alt="image" class="w-6 sm:w-[30px] lg:w-10 h-6 sm:h-[30px] lg:h-10">
                 </div>
               </div>
             </div>
           </div>
-          <div class="bg-neutral-200 p-6 sm:p-8 md:p-10 h-full rounded-3xl sm:rounded-[32px] md:rounded-[40px]">
+          <div class="bg-neutral-200 p-6 sm:p-8 md:p-10 h-full rounded-3xl sm:rounded-[32px] md:rounded-[40px]" data-aos="fade-up" data-aos-delay="800">
             <div class="flex flex-col items-center justify-center gap-8">
               <div class="flex flex-col gap-2 sm:gap-3 text-center">
-                <h2>Workflow Orchestrator Integration</h2>
-                <p class="body1 text-theme-textsecondary max-w-[700px]">Integrate FlexFlow seamlessly as your workflow orchestrator. Elevate collaboration and automation with efficient integration solutions.</p>
+                <h2>Seamless Ecosystem Integration</h2>
+                <p class="body1 text-theme-textsecondary max-w-[700px]">Integrate Exonoma effortlessly with your existing financial tools and platforms. Elevate collaboration and automate workflows with our robust integration solutions.</p>
               </div>
-              <button class="btn btn-primary btn-lg">See All Integration</button>
+              <button class="btn btn-primary btn-lg hover-scale-btn">See All Integrations</button>
             </div>
           </div>
         </div>
       </div>
     </section>
- <!-- [ Footer ] start -->
+    <!-- [ Integration Section ] end -->
+
+    <!-- [ Footer ] start -->
     <section class="common-section">
       <div class="container">
         <div class="flex flex-col gap-6 sm:gap-8 lg:gap-10">
           <div class="flex flex-col lg:flex-row gap-8 lg:gap-6">
             <div class="basis-full lg:basis-6/12">
               <div class="flex flex-col sm:flex-row lg:flex-col gap-6 justify-between h-full">
-                <div class="flex flex-col items-start gap-3 sm:gap-6">
+                <div class="flex flex-col items-start gap-3 sm:gap-6" data-aos="fade-right">
                   <!-- [ Logo main ] start -->
                   <svg class="w-[112px] lg:w-[140px] h-auto text-primary-500" viewBox="0 0 140 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -1000,7 +1055,7 @@
                     />
                   </svg>
                   <h6 class="max-w-[280px] -mb-2 sm:-mb-5">v1.0.0</h6>
-                  <p class="body2 max-w-[280px]">Explore the different versions of our SaasAble template.</p>
+                  <p class="body2 max-w-[280px]">Explore the different versions of our Exonoma platform.</p>
                 </div>
                 <div class="flex flex-col gap-4 sm:gap-5 lg:gap-6">
                  
@@ -1011,28 +1066,28 @@
               <div class="flex flex-row flex-wrap justify-between gap-5 md:gap-8">
                 <div class="basis-5/12 sm:basis-auto">
                   <div class="flex flex-col md:gap-6 items-start">
-                   
+                   <!-- Placeholder for future links if needed -->
                   </div>
                 </div>
                 <div class="basis-5/12 sm:basis-auto">
                   <div class="flex flex-col md:gap-6 items-start">
-                    <h4>Docs</h4>
+                    <h4>Resources</h4>
                     <ul class="*:*:min-h-9 sm:*:*:min-h-10 *:*:py-1.5 *:*:my-0.5 *:*:flex *:*:items-center caption2 py-2 *:*:text-neutral-800 *:*:hover:text-primary-500 *:*:transition-all *:*:duration-500">
                       <li><a href="#">Pricing</a></li>
                       <li><a href="#">FAQ</a></li>
-                   
+                      <li><a href="#">Support</a></li>
                     </ul>
                   </div>
                 </div>
                 <div class="basis-6/12 sm:basis-auto">
                   <div class="flex flex-col md:gap-6 items-start">
-                    <h4>Resources</h4>
+                    <h4>Company</h4>
                     <ul class="*:*:min-h-9 sm:*:*:min-h-10 *:*:py-1.5 *:*:my-0.5 *:*:flex *:*:items-center caption2 py-2 *:*:text-neutral-800 *:*:hover:text-primary-500 *:*:transition-all *:*:duration-500">
-                      <li><a href="https://github.com/phoenixcoded/saasable-ui" target="_blank">Freebies</a>
-                      <li><a href="#">Documentation</a></li>
+                      <li><a href="https://github.com/phoenixcoded/saasable-ui" target="_blank">Careers</a>
+                      <li><a href="#">About Us</a></li>
                       <li><a href="#">Blog</a></li>
                       <li><a href="#">Privacy Policy</a></li>
-                      <li><a href="#">Refund Policy</a></li>
+                      <li><a href="#">Terms of Service</a></li>
                     </ul>
                   </div>
                 </div>
@@ -1041,13 +1096,13 @@
           </div>
           <div class="bg-neutral-100 rounded-3xl sm:rounded-[32px]">
             <div class="flex flex-col sm:flex-row items-center justify-center sm:justify-between gap-3 p-4 sm:py-3 sm:px-6">
-              <span class="caption2">Copyright © 2025 <a href="https://phoenixcoded.net" class="caption hover:text-primary-500 hover:underline">Phoenixcoded</a></span>
+              <span class="caption2">Copyright © 2025 <a href="https://exonoma.com" class="caption hover:text-primary-500 hover:underline">Exonoma</a></span>
               <div class="flex flex-row flex-wrap gap-1 text-2xl leading-none *:flex *:items-center *:justify-center sm:gap-3 *:w-10 sm:*:w-[52px] md:*:w-14 *:h-10 sm:*:h-[52px] md:*:h-14 *:rounded-xl *:text-primary-500 *:hover:bg-neutral-300 *:transition-all *:duration-300">
-                <a href="#"><i class="ti ti-brand-linkedin"></i></a>
-                <a href="#"><i class="ti ti-brand-facebook-filled"></i></a>
-                <a href="#"><i class="ti ti-brand-youtube-filled"></i></a>
-                <a href="#"><i class="ti ti-brand-github-filled"></i></a>
-                <a href="#"><i class="ti ti-brand-dribbble-filled"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
+                <a href="#" aria-label="Facebook"><i class="ti ti-brand-facebook-filled"></i></a>
+                <a href="#" aria-label="YouTube"><i class="ti ti-brand-youtube-filled"></i></a>
+                <a href="#" aria-label="GitHub"><i class="ti ti-brand-github-filled"></i></a>
+                <a href="#" aria-label="Dribbble"><i class="ti ti-brand-dribbble-filled"></i></a>
               </div>
             </div>
           </div>
@@ -1056,41 +1111,7 @@
     </section>
     <!-- [ Footer ] end -->
 
-
-    <script src="/assets/js/plugins/tiny-slider.js"></script>
-    <script type="module">
-      document.addEventListener('DOMContentLoaded', function () {
-        var slider = tns({
-          container: '.blog-slider1',
-          items: 1,
-          center:true,
-          nav: false,
-          autoHeight: false,
-          speed: 500,
-          gutter: 4,
-          autoplayTimeout: 6000,
-          slideBy: 1,
-          loop: true,
-          controls: false,
-          autoplay: true,
-          autoplayButtonOutput: false,
-          autoplayButton: false,
-          edgePadding:45,
-          mouseDrag:true,
-          responsive: {
-            768: {
-              items: 2,
-              gutter: 8,
-            },
-            1024:{
-              items: 3,
-              gutter: 12,
-              edgePadding:95,
-            }
-          }
-        });
-      });
-    </script>
+  </div> <!-- End of #main-content -->
 
   <!-- Required Js -->
   <script src="./assets/js/plugins/popper.min.js"></script>
@@ -1098,6 +1119,115 @@
   <script src="./assets/js/component.js"></script>
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/theme.js"></script>
+
+  <!-- GSAP and ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Tiny Slider JS -->
+  <script src="/assets/js/plugins/tiny-slider.js"></script>
+
+  <script type="module">
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true,
+      mirror: false,
+    });
+
+    // GSAP Loader Animation
+    const loaderWrapper = document.getElementById('loader-wrapper');
+    const mainContent = document.getElementById('main-content');
+    const loaderPath = document.querySelector('#loader path');
+
+    gsap.to(loaderPath, {
+        strokeDashoffset: 0,
+        strokeDasharray: "150 100",
+        duration: 0.5,
+        repeat: -1,
+        ease: "power1.inOut"
+    });
+
+    gsap.to(loaderWrapper, {
+        opacity: 0,
+        delay: 2, // Adjust delay as needed for loader animation duration
+        onComplete: () => {
+            loaderWrapper.style.display = 'none';
+            gsap.to(mainContent, { opacity: 1, duration: 1, ease: "power2.out" });
+            // Initial animations for hero section after loader fades
+            gsap.from(".hero-heading", { y: 50, opacity: 0, stagger: 0.2, duration: 1, ease: "power3.out" });
+            gsap.from(".hero-heading + .flex button", { y: 50, opacity: 0, duration: 1, ease: "power3.out", delay: 0.4 });
+            gsap.from(".sticky > div", { scale: 0.9, opacity: 0, duration: 1.2, ease: "power3.out", delay: 0.6 });
+        }
+    });
+
+    // GSAP Hover Effects for Buttons
+    document.querySelectorAll('.hover-scale-btn').forEach(button => {
+        button.addEventListener('mouseenter', () => {
+            gsap.to(button, { scale: 1.05, duration: 0.3, ease: "back.out(1.7)" });
+        });
+        button.addEventListener('mouseleave', () => {
+            gsap.to(button, { scale: 1, duration: 0.3, ease: "power2.out" });
+        });
+    });
+
+    // GSAP Count-up Animation for Stats
+    gsap.utils.toArray(".count-up").forEach(element => {
+        const target = parseInt(element.dataset.target);
+        gsap.from(element, {
+            textContent: 0,
+            duration: 2,
+            ease: "power1.out",
+            snap: { textContent: 1 },
+            scrollTrigger: {
+                trigger: element,
+                start: "top 80%",
+                end: "bottom 20%",
+                toggleActions: "play none none none",
+                // markers: true // Uncomment for debugging ScrollTrigger
+            },
+            onUpdate: function() {
+                element.textContent = Math.ceil(this.progress() * target);
+            }
+        });
+    });
+
+    // Tiny Slider Initialization
+    document.addEventListener('DOMContentLoaded', function () {
+      var slider = tns({
+        container: '.blog-slider1',
+        items: 1,
+        center:true,
+        nav: false,
+        autoHeight: false,
+        speed: 500,
+        gutter: 4,
+        autoplayTimeout: 6000,
+        slideBy: 1,
+        loop: true,
+        controls: false,
+        autoplay: true,
+        autoplayButtonOutput: false,
+        autoplayButton: false,
+        edgePadding:45,
+        mouseDrag:true,
+        responsive: {
+          768: {
+            items: 2,
+            gutter: 8,
+          },
+          1024:{
+            items: 3,
+            gutter: 12,
+            edgePadding:95,
+          }
+        }
+      });
+    });
+
+  </script>
 
 </body>
 
