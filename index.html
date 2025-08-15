@@ -92,6 +92,14 @@
         padding-bottom: 100px;
       }
     }
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .animate-marquee {
+      display: inline-flex;
+      animation: marquee 22s linear infinite;
+    }
   </style>
 </head>
 
@@ -227,10 +235,58 @@
       </div>
     </div>
   </nav>
+
   <!-- [ Nav ] end -->
 
   <!-- Main Content Wrapper for Loader -->
   <div id="main-content" style="opacity: 0;">
+  <!-- [Crypto Marquee Section] start -->
+  <section class="relative py-3 border-t border-b border-gray-700">
+    <div class="overflow-hidden">
+      <div id="marquee" class="whitespace-nowrap flex animate-marquee"></div>
+    </div>
+  </section>
+  <script>
+
+    const marquee = document.getElementById('marquee');
+
+    // Placeholder coins while loading
+    const placeholders = Array(15).fill().map((_, i) => `
+      <div class="inline-flex items-center gap-3 px-6 text-white font-medium bg-gray-800/30 rounded-lg mx-2 py-1 animate-pulse">
+        <div class="w-6 h-6 bg-gray-700 rounded-full"></div>
+        <div class="w-16 h-4 bg-gray-700 rounded"></div>
+        <div class="w-12 h-4 bg-gray-700 rounded"></div>
+      </div>
+    `).join('');
+
+    marquee.innerHTML = placeholders; // Show skeleton instantly
+
+    async function fetchCoins() {
+      try {
+        const res = await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false');
+        const coins = await res.json();
+        marquee.innerHTML = ''; // Clear skeleton
+
+        coins.forEach(coin => {
+          const coinEl = document.createElement('div');
+          coinEl.className = "inline-flex items-center gap-3 px-6 text-white font-medium rounded-lg mx-2 py-1 hover:scale-105 transition-transform duration-300";
+          coinEl.innerHTML = `
+            <img src="${coin.image}" alt="${coin.name}" class="w-6 h-6 rounded-full" />
+            <span>${coin.name}</span>
+            <span class="font-bold">$${coin.current_price.toLocaleString()}</span>
+          `;
+          marquee.appendChild(coinEl);
+        });
+      } catch (err) {
+        console.error(err);
+        marquee.innerHTML = '<span class="text-red-500 px-6">Failed to load data</span>';
+      }
+    }
+
+    fetchCoins();
+    setInterval(fetchCoins, 60000); // refresh every 60 seconds
+  </script>
+  <!-- [Crypto Marquee Section] end -->
 
     <!-- [ Hero Section ] start -->
     <section class="common-section relative overflow-hidden">
@@ -341,7 +397,7 @@
       </div>
     </section>
     <!-- [ Exonoma 2025 Stats Section ] end -->
-         <!-- [ Trust & Performance Section ] start -->
+    <!-- [ Trust & Performance Section ] start -->
     <section class="common-section">
       <div class="container">
         <div
