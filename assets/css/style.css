@@ -7729,7 +7729,7 @@
       letter-spacing: var(--font-caption2-letterSpacing);
       font-weight: var(--font-caption2-fontWeight);
     }
-    h1:not([class*="text-theme"]), h2:not([class*="text-theme"]), h3:not([class*="text-theme"]), h4:not([class*="text-theme"]), h5:not([class*="text-theme"]), h6:not([class*="text-theme"]), .h1:not([class*="text-theme"]), .h2:not([class*="text-theme"]), .h3:not([class*="text-theme"]), .h4:not([class*="text-theme"]), .h5:not([class*="text-theme"]), .h6:not([class*="text-theme"]) {
+    h1:not([class*="text-theme"]), h2:not([class*="text-theme"]), h4:not([class*="text-theme"]), h5:not([class*="text-theme"]), h6:not([class*="text-theme"]), .h1:not([class*="text-theme"]), .h2:not([class*="text-theme"]), .h3:not([class*="text-theme"]), .h4:not([class*="text-theme"]), .h5:not([class*="text-theme"]), .h6:not([class*="text-theme"]) {
       color: var(--theme-text-primary);
     }
     .text-muted {

@@ -98,7 +98,7 @@
     }
     .animate-marquee {
       display: inline-flex;
-      animation: marquee 22s linear infinite;
+      animation: marquee 38s linear infinite;
     }
   </style>
 </head>
@@ -404,7 +404,7 @@
     </section>
     <!-- [ Exonoma 2025 Stats Section ] end -->
     <!-- [ Trust & Performance Section ] start -->
-    <section class="common-section">
+    <section   id="upper-section" class="common-section">
       <div class="container">
         <div
           class="p-6 sm:p-8 md:p-10 rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden flex flex-col gap-6 h-full">
@@ -471,86 +471,99 @@
       </div>
     </section>
     <!-- [ Trust & Performance Section ] end -->
-    <!-- [ Value ] start -->
-      <section class="common-section">
-    <div class="container">
-      <div class="flex flex-col gap-6 sm:gap-8">
-        
-        <!-- Section Heading -->
-        <div data-aos="fade-up" data-aos-delay="100" class="flex flex-col gap-2 sm:gap-3">
-          <h2>Unlock Peak Efficiency with Our CRM Solution</h2>
-          <h6 class="text-theme-textsecondary max-w-[750px]">
-            Experience peak efficiency with our CRM solution, revolutionizing productivity and success.
-          </h6>
+ <!-- [ CRM Section with Dark Gradient + Parallax ] -->
+<section class="common-section relative overflow-hidden rounded-[60px]" id="crm-section">
+
+
+  <!-- Parallax Glow Layer -->
+  <div id="crm-bg" class="absolute inset-0 -z-10">
+    <!-- Big glow bottom-right -->
+    <div class="absolute bottom-0 right-0 w-[700px] h-[700px] rounded-full bg-gradient-to-tr from-sky-300 to-blue-500 opacity-50 blur-3xl"></div>
+    <!-- Smaller glow top-left -->
+    <div class="absolute top-0 left-0 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-sky-200 to-blue-400 opacity-40 blur-3xl"></div>
+  </div>
+
+  <!-- Dark Gradient Background -->
+  <div class="absolute inset-0 -z-20 bg-gradient-to-br from-sky-500 to-blue-800"></div>
+
+  <div class="container relative z-10 text-white">
+    <div class="flex flex-col gap-6 sm:gap-8">
+      
+      <!-- Section Heading -->
+      <div data-aos="fade-up" data-aos-delay="100" class="flex flex-col gap-2 sm:gap-3">
+        <h2>Unlock Peak Efficiency with Our CRM Solution</h2>
+        <h6 class="text-white/80 max-w-[750px]">
+          Experience peak efficiency with our CRM solution, revolutionizing productivity and success.
+        </h6>
+      </div>
+
+      <div class="grid grid-cols-12 gap-3">
+        <!-- Card 1 -->
+        <div class="col-span-12 sm:col-span-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-white text-black overflow-hidden h-full">
+            <div class="bg-neutral-200 py-2.5 sm:py-10 rounded-3xl sm:rounded-[32px] md:rounded-[40px] h-[248px] sm:h-[264px] md:h-[350px]">
+              <div class="h-full bg-cover bg-[url('../images/graphics/crm/graphics1-light.svg')] dark:bg-[url('../images/graphics/crm/graphics1-light.svg')]"></div>
+            </div>
+            <div class="p-6 sm:p-8 md:p-10">
+              <div class="flex flex-col gap-2 sm:gap-3">
+                <h3>Tailored financial intelligence</h3>
+                <p class="body1 text-theme-textsecondary">
+                  Goals, time horizon and risk profile → one clear operating plan.
+                </p>
+              </div>
+            </div>
+          </div> 
         </div>
 
-        <div class="grid grid-cols-12 gap-3">
-
-          <!-- Card 1 -->
-          <div class="col-span-12 sm:col-span-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full">
-              <div class="bg-neutral-200 py-2.5 sm:py-10 rounded-3xl sm:rounded-[32px] md:rounded-[40px] h-[248px] sm:h-[264px] md:h-[350px]">
-                <div class="h-full bg-cover bg-[url('../images/graphics/crm/graphics1-light.svg')] dark:bg-[url('../images/graphics/crm/graphics1-dark.svg')]"></div>
+        <!-- Card 2 -->
+        <div class="col-span-12 sm:col-span-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-white text-black overflow-hidden h-full">
+            <div class="bg-neutral-200 py-2.5 sm:py-10 rounded-3xl sm:rounded-[32px] md:rounded-[40px] h-[248px] sm:h-[264px] md:h-[350px]">
+              <div class="h-full bg-cover bg-[url('../images/graphics/crm/graphics1-light.svg')] dark:bg-[url('../images/graphics/crm/graphics1-light.svg')]"></div>
+            </div>
+            <div class="p-6 sm:p-8 md:p-10">
+              <div class="flex flex-col gap-2 sm:gap-3">
+                <h3>AI + Dynamic Hedging</h3>
+                <p class="body1 text-theme-textsecondary">
+                  Proprietary signals and progressive hedging to limit drawdowns.
+                </p>
               </div>
-              <div class="p-6 sm:p-8 md:p-10">
-                <div class="flex flex-col gap-2 sm:gap-3">
-                  <h3>Tailored financial intelligence</h3>
-                  <p class="body1 text-theme-textsecondary">
-                    Goals, time horizon and risk profile → one clear operating plan.
-                  </p>
-                </div>
-              </div>
-            </div> 
-          </div>
-
-          <!-- Card 2 -->
-          <div class="col-span-12 sm:col-span-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden h-full">
-              <div class="bg-neutral-200 py-2.5 sm:py-10 rounded-3xl sm:rounded-[32px] md:rounded-[40px] h-[248px] sm:h-[264px] md:h-[350px]">
-                <div class="h-full bg-cover bg-[url('../images/graphics/crm/graphics1-light.svg')] dark:bg-[url('../images/graphics/crm/graphics1-dark.svg')]"></div>
-              </div>
-              <div class="p-6 sm:p-8 md:p-10">
-                <div class="flex flex-col gap-2 sm:gap-3">
-                  <h3>AI + Dynamic Hedging</h3>
-                  <p class="body1 text-theme-textsecondary">
-                    Proprietary signals and progressive hedging to limit drawdowns.
-                  </p>
-                </div>
-              </div>
-            </div> 
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col-span-12" data-aos="fade-up" data-aos-delay="400">
-            <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden">
-              <div class="flex flex-col-reverse sm:flex-row">
-                <div class="basis-full sm:basis-6/12 md:basis-4/12">
-                  <div class="p-6 sm:p-8 md:p-10 flex flex-col items-start justify-between h-full gap-6 sm:gap-8 md:gap-10">
-                    <div class="flex flex-col gap-2 sm:gap-3">
-                      <h3>Full transparency</h3>
-                      <p class="body1 text-theme-textsecondary">
-                        Traceable activity, periodic reports, integrated education.
-                      </p>
-                    </div>
-                   
-                  </div>
-                </div>
-                <div class="basis-full sm:basis-6/12 md:basis-8/12">
-                  <div class="bg-neutral-200 pt-5 sm:pt-8 rounded-3xl sm:rounded-[32px] md:rounded-[40px] h-[214px] sm:h-[236px] md:h-[285px] overflow-hidden">
-                    <div class="h-full bg-left-top bg-cover bg-[url('../images/graphics/crm/desktop1-light.svg')] dark:bg-[url('../images/graphics/crm/desktop1-dark.svg')]"></div>
-                  </div>
-                </div>
-              </div>
-            </div> 
-          </div>
-
+            </div>
+          </div> 
         </div>
+
+        <!-- Card 3 -->
+        <div class="col-span-12" data-aos="fade-up" data-aos-delay="400">
+          <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-white text-black overflow-hidden">
+            <div class="flex flex-col-reverse sm:flex-row">
+              <div class="basis-full sm:basis-6/12 md:basis-4/12">
+                <div class="p-6 sm:p-8 md:p-10 flex flex-col items-start justify-between h-full gap-6 sm:gap-8 md:gap-10">
+                  <div class="flex flex-col gap-2 sm:gap-3">
+                    <h3>Full transparency</h3>
+                    <p class="body1 text-theme-textsecondary">
+                      Traceable activity, periodic reports, integrated education.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="basis-full sm:basis-6/12 md:basis-8/12">
+                <div class="bg-neutral-200 pt-5 sm:pt-8 rounded-3xl sm:rounded-[32px] md:rounded-[40px] h-[214px] sm:h-[236px] md:h-[285px] overflow-hidden">
+                  <div class="h-full bg-left-top bg-cover bg-[url('../images/graphics/crm/desktop1-light.svg')] dark:bg-[url('../images/graphics/crm/desktop1-light.svg')]"></div>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div>
+
       </div>
     </div>
-      </section>
-    <!-- [ Value ] end -->
-         <!-- [ Clientele ] start -->
-      <section class="overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
+  </div>
+</section>
+
+
+
+    <!-- [ Clientele ] start -->
+      <section class="common-section overflow-hidden" data-aos="fade-up" data-aos-duration="1200">
         <div class="">
           <div class="flex flex-col items-center justify-center gap-5">
             <h6 class="animate-y delay-reset subtitle2 text-theme-textsecondary">4,000+ companies already growing</h6>
@@ -1154,7 +1167,7 @@
 <!-- [ Features ] end -->
 
 
-<!-- [For Whom] -->
+
 <!-- [For Whom] -->
 <section class="common-section" data-aos="fade-up" data-aos-duration="1000">
   <div class="container">
@@ -2078,6 +2091,49 @@
     const loaderWrapper = document.getElementById('loader-wrapper');
     const mainContent = document.getElementById('main-content');
     const loaderPath = document.querySelector('#loader path');
+    const upper = document.querySelector("#upper-section");
+
+
+    gsap.to("#crm-bg div:first-child", {
+  y: -80,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#crm-section",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true
+  }
+});
+gsap.to("#crm-bg div:last-child", {
+  y: 80,
+  ease: "none",
+  scrollTrigger: {
+    trigger: "#crm-section",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true
+  }
+});
+
+// Change body background color when section is in view
+// Change body background color when section is in view
+ScrollTrigger.create({
+  trigger: "#crm-section",
+  start: "top center",
+  end: "bottom center",
+  onEnter: () => document.body.style.setProperty(
+    "background",
+    "linear-gradient(to bottom right, #0e3b60, #082541)",
+    "important"
+  ),
+  onLeave: () => document.body.style.removeProperty("background"),
+  onEnterBack: () => document.body.style.setProperty(
+    "background",
+    "linear-gradient(to bottom right, #0e3b60, #082541)",
+    "important"
+  ),
+  onLeaveBack: () => document.body.style.removeProperty("background")
+});
 
     gsap.to(loaderPath, {
         strokeDashoffset: 0,
