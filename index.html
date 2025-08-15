@@ -292,12 +292,9 @@
 <section class="common-section relative overflow-hidden group">
 
   <!-- Gradient Background Layer -->
-  <div class="absolute inset-0 -z-10 transition-all duration-500">
-    <!-- Main big glow on bottom-right -->
-    <div class="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-gradient-to-tr from-sky-200 to-blue-300 opacity-60 blur-3xl group-hover:from-sky-400 group-hover:to-blue-600 group-hover:opacity-80 transition-all duration-500"></div>
-    
-    <!-- Smaller glow on top-left for balance -->
-    <div class="absolute -top-20 -left-20 w-[300px] h-[300px] rounded-full bg-gradient-to-br from-sky-100 to-blue-200 opacity-40 blur-3xl group-hover:from-sky-300 group-hover:to-blue-500 group-hover:opacity-60 transition-all duration-500"></div>
+  <div class="absolute inset-0 -z-10 transition-all duration-500 flex items-start justify-center pt-20">
+    <!-- Big centered darker semi-circle under text -->
+    <div class="w-[900px] h-[450px] rounded-b-full bg-gradient-to-b from-blue-900 to-blue-700 opacity-40 blur-3xl group-hover:opacity-60 transition-all duration-500"></div>
   </div>
 
   <div class="container relative z-10">
@@ -334,6 +331,7 @@
     </div>
   </div>
 </section>
+
 <!-- [ Hero Section ] end -->
 
  <!-- [ Exonoma 2025 Stats Section ] start -->
@@ -472,7 +470,7 @@
     </section>
     <!-- [ Trust & Performance Section ] end -->
  <!-- [ CRM Section with Dark Gradient + Parallax ] -->
-<section class="common-section relative overflow-hidden rounded-[60px]" id="crm-section">
+<section class="common-section relative overflow-hidden rounded-b-[60px]" id="crm-section">
 
 
   <!-- Parallax Glow Layer -->
@@ -1291,16 +1289,6 @@
       </div>
     </section>
     <!-- [ Call To Action ] end -->
-
-  
-
-
-
-
-
-
- 
-
     <!-- [ Resource Center Section ] start -->
     <section class="common-section">
       <div class="container">
@@ -2114,26 +2102,68 @@ gsap.to("#crm-bg div:last-child", {
     scrub: true
   }
 });
-
-// Change body background color when section is in view
-// Change body background color when section is in view
+/*
 ScrollTrigger.create({
   trigger: "#crm-section",
   start: "top center",
   end: "bottom center",
-  onEnter: () => document.body.style.setProperty(
-    "background",
-    "linear-gradient(to bottom right, #0e3b60, #082541)",
-    "important"
-  ),
-  onLeave: () => document.body.style.removeProperty("background"),
-  onEnterBack: () => document.body.style.setProperty(
-    "background",
-    "linear-gradient(to bottom right, #0e3b60, #082541)",
-    "important"
-  ),
-  onLeaveBack: () => document.body.style.removeProperty("background")
+  onEnter: () => {
+    // background gradient
+    gsap.to("#upper-section", {
+      background: "linear-gradient(to bottom right, rgb(56, 189, 248), rgb(30, 64, 175))", // sky-400 to blue-800 (lighter)
+      duration: 3,
+      delay: 0.3,
+      ease: "power2.out"
+    });
+
+    // glow divs add
+    if (!document.querySelector("#upper-section .temp-glow")) {
+      const glowWrapper = document.createElement("div");
+      glowWrapper.className = "temp-glow absolute inset-0 -z-10";
+      glowWrapper.innerHTML = `
+        <div class="absolute bottom-0 right-0 w-[700px] h-[700px] rounded-full bg-gradient-to-tr from-sky-300 to-blue-500 opacity-40 blur-3xl"></div>
+        <div class="absolute top-0 left-0 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-sky-200 to-blue-400 opacity-30 blur-3xl"></div>
+      `;
+      document.querySelector("#upper-section").appendChild(glowWrapper);
+    }
+  },
+  onLeave: () => {
+    gsap.to("#upper-section", {
+      background: "",
+      duration: 1.2,
+      delay: 0.3,
+      ease: "power2.out"
+    });
+    document.querySelector("#upper-section .temp-glow")?.remove();
+  },
+  onEnterBack: () => {
+    gsap.to("#upper-section", {
+      background: "linear-gradient(to bottom right, rgb(56, 189, 248), rgb(30, 64, 175))",
+      duration: 1.2,
+      delay: 0.3,
+      ease: "power2.out"
+    });
+    if (!document.querySelector("#upper-section .temp-glow")) {
+      const glowWrapper = document.createElement("div");
+      glowWrapper.className = "temp-glow absolute inset-0 -z-10";
+      glowWrapper.innerHTML = `
+        <div class="absolute bottom-0 right-0 w-[700px] h-[700px] rounded-full bg-gradient-to-tr from-sky-300 to-blue-500 opacity-40 blur-3xl"></div>
+        <div class="absolute top-0 left-0 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-sky-200 to-blue-400 opacity-30 blur-3xl"></div>
+      `;
+      document.querySelector("#upper-section").appendChild(glowWrapper);
+    }
+  },
+  onLeaveBack: () => {
+    gsap.to("#upper-section", {
+      background: "",
+      duration: 1.2,
+      delay: 0.3,
+      ease: "power2.out"
+    });
+    document.querySelector("#upper-section .temp-glow")?.remove();
+  }
 });
+*/
 
     gsap.to(loaderPath, {
         strokeDashoffset: 0,
