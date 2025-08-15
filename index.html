@@ -331,6 +331,58 @@
     </div>
   </div>
 </section>
+<!-- Add model-viewer script in <head> -->
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<section class="common-section">
+  <div class="container">
+    <div class="flex flex-col gap-6 sm:gap-8">
+      
+      <!-- Section Heading -->
+      <div class="flex flex-col items-center text-center gap-2 sm:gap-3">
+        <h2>Empowering Businesses to Succeed</h2>
+        <h6 class="text-theme-textsecondary max-w-[476px] md:max-w-[614px]">
+          Learn how our CRM platform empowers businesses of all sizes to achieve their goals and reach new heights
+        </h6>
+      </div>
+      
+      <!-- Content Rows -->
+      <div class="flex flex-col-reverse sm:flex-row gap-3 items-stretch">
+        
+        <!-- Left Text Card -->
+        <div class="basis-full sm:basis-1/2">
+          <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden flex flex-col h-full">
+            <div class="p-6 sm:p-8 md:p-10 flex flex-col items-start gap-6 sm:gap-8 md:gap-10 h-full justify-between">
+              <div class="flex flex-col gap-2 sm:gap-3">
+                <h4>Empower your business with our CRM platform, streamlining sales</h4>
+                <p class="body1 text-theme-textsecondary">
+                  Empower your business with our CRM platform, streamlining sales, marketing, and service processes to drive growth and build stronger customer relationships.
+                </p>
+              </div>
+              <button class="btn btn-lg btn-primary">Subscribe</button>
+            </div>
+          </div> 
+        </div>
+        
+        <!-- Right 3D Model -->
+        <div class="basis-full sm:basis-1/2">
+          <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden flex items-center justify-center h-full min-h-[207px] sm:min-h-[368px] md:min-h-[336px] relative">
+            <model-viewer
+              src="./assets/3d-models/augustus_bevilacqua.glb"
+              alt="3D CRM Model"
+              camera-controls
+              auto-rotate
+              shadow-intensity="1"
+              class="w-full h-full bg-white"
+            ></model-viewer>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- [ Hero Section ] end -->
 
@@ -402,7 +454,7 @@
     </section>
     <!-- [ Exonoma 2025 Stats Section ] end -->
     <!-- [ Trust & Performance Section ] start -->
-    <section   id="upper-section" class="common-section">
+    <section  id="upper-section" class="common-section">
       <div class="container">
         <div
           class="p-6 sm:p-8 md:p-10 rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden flex flex-col gap-6 h-full">
@@ -468,57 +520,70 @@
         </div>
       </div>
     </section>
+
     <!-- [ Trust & Performance Section ] end -->
  <!-- [ CRM Section with Dark Gradient + Parallax ] -->
-<section class="common-section relative overflow-hidden rounded-b-[60px]" id="crm-section">
+    <section class="common-section relative overflow-hidden rounded-b-[60px]" id="crm-section">
 
 
-  <!-- Parallax Glow Layer -->
-  <div id="crm-bg" class="absolute inset-0 -z-10">
-    <!-- Big glow bottom-right -->
-    <div class="absolute bottom-0 right-0 w-[700px] h-[700px] rounded-full bg-gradient-to-tr from-sky-300 to-blue-500 opacity-50 blur-3xl"></div>
-    <!-- Smaller glow top-left -->
-    <div class="absolute top-0 left-0 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-sky-200 to-blue-400 opacity-40 blur-3xl"></div>
-  </div>
-
-  <!-- Dark Gradient Background -->
-  <div class="absolute inset-0 -z-20 bg-gradient-to-br from-sky-500 to-blue-800"></div>
-
-  <div class="container relative z-10 text-white">
-    <div class="flex flex-col gap-6 sm:gap-8">
-      
-      <!-- Section Heading -->
-      <div data-aos="fade-up" data-aos-delay="100" class="flex flex-col gap-2 sm:gap-3">
-        <h2>Unlock Peak Efficiency with Our CRM Solution</h2>
-        <h6 class="text-white/80 max-w-[750px]">
-          Experience peak efficiency with our CRM solution, revolutionizing productivity and success.
-        </h6>
+      <!-- Parallax Glow Layer -->
+      <div id="crm-bg" class="absolute inset-0 -z-10">
+        <!-- Big glow bottom-right -->
+        <div class="absolute bottom-0 right-0 w-[700px] h-[700px] rounded-full bg-gradient-to-tr from-sky-300 to-blue-500 opacity-50 blur-3xl"></div>
+        <!-- Smaller glow top-left -->
+        <div class="absolute top-0 left-0 w-[500px] h-[500px] rounded-full bg-gradient-to-br from-sky-200 to-blue-400 opacity-40 blur-3xl"></div>
       </div>
 
-      <div class="grid grid-cols-12 gap-3">
-        <!-- Card 1 -->
-        <div class="col-span-12 sm:col-span-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-white text-black overflow-hidden h-full">
-            <div class="bg-neutral-200 py-2.5 sm:py-10 rounded-3xl sm:rounded-[32px] md:rounded-[40px] h-[248px] sm:h-[264px] md:h-[350px]">
-              <div class="h-full bg-cover bg-[url('../images/graphics/crm/graphics1-light.svg')] dark:bg-[url('../images/graphics/crm/graphics1-light.svg')]"></div>
-            </div>
-            <div class="p-6 sm:p-8 md:p-10">
-              <div class="flex flex-col gap-2 sm:gap-3">
-                <h3>Tailored financial intelligence</h3>
-                <p class="body1 text-theme-textsecondary">
-                  Goals, time horizon and risk profile → one clear operating plan.
-                </p>
-              </div>
-            </div>
-          </div> 
-        </div>
+      <!-- Dark Gradient Background -->
+      <div class="absolute inset-0 -z-20 bg-gradient-to-br from-sky-500 to-blue-800"></div>
 
-        <!-- Card 2 -->
+      <div class="container relative z-10 text-white">
+        <div class="flex flex-col gap-6 sm:gap-8">
+          
+          <!-- Section Heading -->
+          <div data-aos="fade-up" data-aos-delay="100" class="flex flex-col gap-2 sm:gap-3">
+            <h2>Unlock Peak Efficiency with Our CRM Solution</h2>
+            <h6 class="text-white/80 max-w-[750px]">
+              Experience peak efficiency with our CRM solution, revolutionizing productivity and success.
+            </h6>
+          </div>
+
+          <div class="grid grid-cols-12 gap-3">
+            <!-- Card 1 -->
+            <div class="col-span-12 sm:col-span-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-white text-black overflow-hidden h-full">
+                <div class="bg-neutral-200 py-2.5 sm:py-10 rounded-3xl sm:rounded-[32px] md:rounded-[40px] h-[248px] sm:h-[264px] md:h-[350px]">
+                  <div class="h-full bg-cover bg-[url('../images/graphics/crm/graphics1-light.svg')] dark:bg-[url('../images/graphics/crm/graphics1-light.svg')]"></div>
+                </div>
+                <div class="p-6 sm:p-8 md:p-10">
+                  <div class="flex flex-col gap-2 sm:gap-3">
+                    <h3>Tailored financial intelligence</h3>
+                    <p class="body1 text-theme-textsecondary">
+                      Goals, time horizon and risk profile → one clear operating plan.
+                    </p>
+                  </div>
+                </div>
+              </div> 
+            </div>
+
+            <!-- Card 2 -->
+        <!-- Make sure model-viewer script is loaded in <head> -->
         <div class="col-span-12 sm:col-span-6" data-aos="fade-up" data-aos-delay="300">
           <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-white text-black overflow-hidden h-full">
-            <div class="bg-neutral-200 py-2.5 sm:py-10 rounded-3xl sm:rounded-[32px] md:rounded-[40px] h-[248px] sm:h-[264px] md:h-[350px]">
-              <div class="h-full bg-cover bg-[url('../images/graphics/crm/graphics1-light.svg')] dark:bg-[url('../images/graphics/crm/graphics1-light.svg')]"></div>
+            
+            <!-- 3D Model Section -->
+            <div class="bg-neutral-200 py-2.5 sm:py-10 rounded-3xl sm:rounded-[32px] md:rounded-[40px] h-[248px] sm:h-[264px] md:h-[350px] flex items-center justify-center">
+              <model-viewer
+                src="./assets/3d-models/robot_character.glb"
+                alt="3D CRM Model"
+                camera-controls
+                auto-rotate
+                shadow-intensity="1"
+                class="w-full h-full bg-white rounded-3xl sm:rounded-[32px] md:rounded-[40px]"
+              ></model-viewer>
             </div>
+
+            <!-- Text Section -->
             <div class="p-6 sm:p-8 md:p-10">
               <div class="flex flex-col gap-2 sm:gap-3">
                 <h3>AI + Dynamic Hedging</h3>
@@ -527,36 +592,38 @@
                 </p>
               </div>
             </div>
+            
           </div> 
         </div>
 
-        <!-- Card 3 -->
-        <div class="col-span-12" data-aos="fade-up" data-aos-delay="400">
-          <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-white text-black overflow-hidden">
-            <div class="flex flex-col-reverse sm:flex-row">
-              <div class="basis-full sm:basis-6/12 md:basis-4/12">
-                <div class="p-6 sm:p-8 md:p-10 flex flex-col items-start justify-between h-full gap-6 sm:gap-8 md:gap-10">
-                  <div class="flex flex-col gap-2 sm:gap-3">
-                    <h3>Full transparency</h3>
-                    <p class="body1 text-theme-textsecondary">
-                      Traceable activity, periodic reports, integrated education.
-                    </p>
+
+            <!-- Card 3 -->
+            <div class="col-span-12" data-aos="fade-up" data-aos-delay="400">
+              <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-white text-black overflow-hidden">
+                <div class="flex flex-col-reverse sm:flex-row">
+                  <div class="basis-full sm:basis-6/12 md:basis-4/12">
+                    <div class="p-6 sm:p-8 md:p-10 flex flex-col items-start justify-between h-full gap-6 sm:gap-8 md:gap-10">
+                      <div class="flex flex-col gap-2 sm:gap-3">
+                        <h3>Full transparency</h3>
+                        <p class="body1 text-theme-textsecondary">
+                          Traceable activity, periodic reports, integrated education.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="basis-full sm:basis-6/12 md:basis-8/12">
+                    <div class="bg-neutral-200 pt-5 sm:pt-8 rounded-3xl sm:rounded-[32px] md:rounded-[40px] h-[214px] sm:h-[236px] md:h-[285px] overflow-hidden">
+                      <div class="h-full bg-left-top bg-cover bg-[url('../images/graphics/crm/desktop1-light.svg')] dark:bg-[url('../images/graphics/crm/desktop1-light.svg')]"></div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="basis-full sm:basis-6/12 md:basis-8/12">
-                <div class="bg-neutral-200 pt-5 sm:pt-8 rounded-3xl sm:rounded-[32px] md:rounded-[40px] h-[214px] sm:h-[236px] md:h-[285px] overflow-hidden">
-                  <div class="h-full bg-left-top bg-cover bg-[url('../images/graphics/crm/desktop1-light.svg')] dark:bg-[url('../images/graphics/crm/desktop1-light.svg')]"></div>
-                </div>
-              </div>
+              </div> 
             </div>
-          </div> 
-        </div>
 
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
