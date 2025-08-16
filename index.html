@@ -32,15 +32,6 @@
   <!-- [Favicon] -->
   <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
 
-  <!-- [Fonts] -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-
   <!-- [Icons] -->
   <link rel="stylesheet" href="./assets/fonts/phosphor/duotone/style.css" />
   <link rel="stylesheet" href="./assets/fonts/tabler-icons.min.css" />
@@ -56,9 +47,18 @@
   <!-- [Custom Styles] -->
   <style>
     .hero-heading {
-      font-family: Inter, "Inter Placeholder", sans-serif !important;
+      font-family: "Aeonik", sans-serif;
       font-size: 85px !important;
       font-weight: 600 !important;
+      letter-spacing: -5.35px !important;
+      color: #fff !important;
+      text-align: center !important;
+      line-height: 1.1;
+    }
+    .sub-hero-heading {
+      font-family: "Aeonik", sans-serif;
+      font-size: 85px !important;
+      font-weight: 425 !important;
       letter-spacing: -5.35px !important;
       color: #fff !important;
       text-align: center !important;
@@ -69,9 +69,17 @@
         font-size: 48px !important;
         letter-spacing: -2px !important;
       }
+      .sub-hero-heading {
+        font-size: 48px !important;
+        letter-spacing: -2px !important;
+      }
     }
     @media (max-width: 480px) {
       .hero-heading {
+        font-size: 36px !important;
+        letter-spacing: -1.5px !important;
+      }
+      .sub-hero-heading {
         font-size: 36px !important;
         letter-spacing: -1.5px !important;
       }
@@ -297,7 +305,7 @@
       <h1 class="hero-heading" data-aos="fade-up" data-aos-delay="500">
         EXONOMA
       </h1>
-      <h2 class="hero-heading" data-aos="fade-up" data-aos-delay="600">
+      <h2 class="sub-hero-heading" data-aos="fade-up" data-aos-delay="600">
         AI-guided, Transparent and Ethical Investing
       </h2>
       <p class="h6 max-w-[343px] lg:max-w-[820px] text-theme-text-secondary">
@@ -333,7 +341,7 @@
       <!-- Section Heading -->
       <div class="flex flex-col items-center text-center gap-2 sm:gap-3">
         <h2>Empowering Businesses to Succeed</h2>
-        <h6 class="text-theme-textsecondary max-w-[476px] md:max-w-[614px]">
+        <h6 class="text-theme-text secondary max-w-[476px] md:max-w-[614px]">
           Learn how our CRM platform empowers businesses of all sizes to achieve their goals and reach new heights
         </h6>
       </div>
@@ -361,7 +369,7 @@
           <div class="rounded-3xl sm:rounded-[32px] md:rounded-[40px] bg-neutral-100 overflow-hidden flex items-center justify-center h-full min-h-[207px] sm:min-h-[368px] md:min-h-[336px] relative">
             <model-viewer
               src="./assets/3d-models/augustus_bevilacqua.glb"
-              alt="3D CRM Model"
+              alt="3D Model"
               camera-controls
               auto-rotate
               shadow-intensity="1"

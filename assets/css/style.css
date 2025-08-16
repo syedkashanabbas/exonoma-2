@@ -7781,8 +7781,26 @@
     hr {
       border-color: var(--theme-divider);
     }
+    @font-face {
+    font-family: "Aeonik";
+    src: url("/fonts/aeonik/Aeonik-Regular.woff2") format("woff2"),
+        url("/fonts/aeonik/Aeonik-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* Example: Aeonik Bold */
+  @font-face {
+    font-family: "Aeonik";
+    src: url("/fonts/aeonik/Aeonik-Bold.woff2") format("woff2"),
+        url("/fonts/aeonik/Aeonik-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
     body {
-      font-family: "Inter", sans-serif;
+      font-family: "Aeonik", sans-serif;
       background: var(--theme-bg-default);
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
@@ -8682,7 +8700,7 @@
   --select-bg-dark: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23bfbfbf' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
   --switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3.6' fill='rgba%28255, 255, 255, 1%29'/%3e%3c/svg%3e");
   --switch-active-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3.6' fill='%23ffffff'/%3e%3c/svg%3e");
-  --font-h1-fontFamily: "archivo", serif;
+  --font-h1-fontFamily: "Aeonik", sans-serif;
   --font-h1-fontWeight: 400;
   --font-h1-fontSize: 57px;
   --font-h1-lineHeight: 1.123;
@@ -8691,7 +8709,7 @@
   --font-h1-md-lineHeight: 1.156;
   --font-h1-sm-fontSize: 32px;
   --font-h1-sm-lineHeight: 1.222;
-  --font-h2-fontFamily: "archivo", serif;
+  --font-h2-fontFamily: "Aeonik", sans-serif;
   --font-h2-fontWeight: 400;
   --font-h2-fontSize: 45px;
   --font-h2-lineHeight: 1.156;
@@ -8700,7 +8718,7 @@
   --font-h2-md-lineHeight: 1.222;
   --font-h2-sm-fontSize: 24px;
   --font-h2-sm-lineHeight: 1.333;
-  --font-h3-fontFamily: "archivo", serif;
+  --font-h3-fontFamily: "Aeonik", sans-serif;
   --font-h3-fontWeight: 400;
   --font-h3-fontSize: 28px;
   --font-h3-lineHeight: 1.286;
@@ -8709,7 +8727,7 @@
   --font-h3-md-lineHeight: 1.333;
   --font-h3-sm-fontSize: 20px;
   --font-h3-sm-lineHeight: 1.4;
-  --font-h4-fontFamily: "archivo", serif;
+  --font-h4-fontFamily: "Aeonik", sans-serif;
   --font-h4-fontWeight: 400;
   --font-h4-fontSize: 24px;
   --font-h4-lineHeight: 1.333;
@@ -8718,7 +8736,7 @@
   --font-h4-md-lineHeight: 1.4;
   --font-h4-sm-fontSize: 16px;
   --font-h4-sm-lineHeight: 1.5;
-  --font-h5-fontFamily: "figtree", serif;
+  --font-h5-fontFamily: "Aeonik", sans-serif;
   --font-h5-fontWeight: 500;
   --font-h5-fontSize: 22px;
   --font-h5-lineHeight: 1.273;
@@ -8726,7 +8744,7 @@
   --font-h5-md-fontSize: 16px;
   --font-h5-md-lineHeight: 1.5;
   --font-h5-md-letterSpacing: 0.15px;
-  --font-h6-fontFamily: "figtree", serif;
+  --font-h6-fontFamily: "Aeonik", sans-serif;
   --font-h6-fontWeight: 400;
   --font-h6-fontSize: 22px;
   --font-h6-lineHeight: 1.364;
@@ -8734,7 +8752,7 @@
   --font-h6-md-fontSize: 16px;
   --font-h6-md-lineHeight: 1.5;
   --font-h6-md-letterSpacing: 0.5px;
-  --font-body1-fontFamily: "figtree", serif;
+  --font-body1-fontFamily: "Aeonik", sans-serif;
   --font-body1-fontWeight: 400;
   --font-body1-fontSize: 16px;
   --font-body1-lineHeight: 1.5;
@@ -8742,14 +8760,14 @@
   --font-body1-md-fontSize: 14px;
   --font-body1-md-lineHeight: 1.429;
   --font-body1-md-letterSpacing: 0.25px;
-  --font-body2-fontFamily: "figtree", serif;
+  --font-body2-fontFamily: "Aeonik", sans-serif;
   --font-body2-fontWeight: 400;
   --font-body2-fontSize: 14px;
   --font-body2-lineHeight: 1.429;
   --font-body2-letterSpacing: 0.25px;
   --font-body2-md-fontSize: 12px;
   --font-body2-md-lineHeight: 1.5;
-  --font-subtitle1-fontFamily: "figtree", serif;
+  --font-subtitle1-fontFamily: "Aeonik", sans-serif;
   --font-subtitle1-fontWeight: 500;
   --font-subtitle1-fontSize: 16px;
   --font-subtitle1-lineHeight: 1.5;
@@ -8758,29 +8776,29 @@
   --font-subtitle1-md-fontSize: 14px;
   --font-subtitle1-md-lineHeight: 1.429;
   --font-subtitle1-md-letterSpacing: 0.1px;
-  --font-subtitle2-fontFamily: "figtree", serif;
+  --font-subtitle2-fontFamily: "Aeonik", sans-serif;
   --font-subtitle2-fontWeight: 600;
   --font-subtitle2-fontSize: 14px;
   --font-subtitle2-lineHeight: 1.429;
   --font-subtitle2-letterSpacing: 0.1px;
   --font-subtitle2-md-fontSize: 12px;
   --font-subtitle2-md-lineHeight: 1.5;
-  --font-caption-fontFamily: "figtree", serif;
+  --font-caption-fontFamily: "Aeonik", sans-serif;
   --font-caption-fontWeight: 600;
   --font-caption-fontSize: 12px;
   --font-caption-lineHeight: 1.333;
   --font-caption-letterSpacing: 0px;
-  --font-caption1-fontFamily: "figtree", serif;
+  --font-caption1-fontFamily: "Aeonik", sans-serif;
   --font-caption1-fontWeight: 400;
   --font-caption1-fontSize: 16px;
   --font-caption1-lineHeight: 1.5;
   --font-caption1-letterSpacing: 0.5px;
-  --font-caption2-fontFamily: "figtree", serif;
+  --font-caption2-fontFamily: "Aeonik", sans-serif;
   --font-caption2-fontWeight: 500;
   --font-caption2-fontSize: 14px;
   --font-caption2-lineHeight: 1.429;
   --font-caption2-letterSpacing: 0.1px;
-  --font-btn-fontFamily: Inter, "Inter Placeholder", sans-serif;
+  --font-btn-fontFamily: "Aeonik", sans-serif;
 }
 .preset-ai-dark {
   --primary-50: #50C3FF;
@@ -9833,7 +9851,7 @@
   --font-h4-md-lineHeight: 1.4;
   --font-h4-sm-fontSize: 16px;
   --font-h4-sm-lineHeight: 1.5;
-  --font-h5-fontFamily: "archivo", serif;
+  --font-h5-fontFamily: "Aeonik", sans-serif;
   --font-h5-fontWeight: 500;
   --font-h5-fontSize: 22px;
   --font-h5-lineHeight: 1.27;
@@ -9841,7 +9859,7 @@
   --font-h5-md-fontSize: 16px;
   --font-h5-md-lineHeight: 1.5;
   --font-h5-md-letterSpacing: 0px;
-  --font-h6-fontFamily: "archivo", serif;
+  --font-h6-fontFamily: "Aeonik", sans-serif;
   --font-h6-fontWeight: 400;
   --font-h6-fontSize: 22px;
   --font-h6-lineHeight: 1.27;
@@ -9849,7 +9867,7 @@
   --font-h6-md-fontSize: 16px;
   --font-h6-md-lineHeight: 1.5;
   --font-h6-md-letterSpacing: 0px;
-  --font-body1-fontFamily: "archivo", serif;
+  --font-body1-fontFamily: "Aeonik", sans-serif;
   --font-body1-fontWeight: 400;
   --font-body1-fontSize: 16px;
   --font-body1-lineHeight: 1.5;
@@ -9857,14 +9875,14 @@
   --font-body1-md-fontSize: 14px;
   --font-body1-md-lineHeight: 1.429;
   --font-body1-md-letterSpacing: 0px;
-  --font-body2-fontFamily: "archivo", serif;
+  --font-body2-fontFamily: "Aeonik", sans-serif;
   --font-body2-fontWeight: 400;
   --font-body2-fontSize: 14px;
   --font-body2-lineHeight: 1.429;
   --font-body2-letterSpacing: 0px;
   --font-body2-md-fontSize: 12px;
   --font-body2-md-lineHeight: 1.5;
-  --font-subtitle1-fontFamily: "archivo", serif;
+  --font-subtitle1-fontFamily: "Aeonik", sans-serif;
   --font-subtitle1-fontWeight: 500;
   --font-subtitle1-fontSize: 16px;
   --font-subtitle1-lineHeight: 1.5;
@@ -9873,29 +9891,29 @@
   --font-subtitle1-md-fontSize: 14px;
   --font-subtitle1-md-lineHeight: 1.429;
   --font-subtitle1-md-letterSpacing: 0px;
-  --font-subtitle2-fontFamily: "archivo", serif;
+  --font-subtitle2-fontFamily: "Aeonik", sans-serif;
   --font-subtitle2-fontWeight: 700;
   --font-subtitle2-fontSize: 14px;
   --font-subtitle2-lineHeight: 1.429;
   --font-subtitle2-letterSpacing: 0px;
   --font-subtitle2-md-fontSize: 12px;
   --font-subtitle2-md-lineHeight: 1.5;
-  --font-caption-fontFamily: "archivo", serif;
+  --font-caption-fontFamily: "Aeonik", sans-serif;
   --font-caption-fontWeight: 700;
   --font-caption-fontSize: 12px;
   --font-caption-lineHeight: 1.333;
   --font-caption-letterSpacing: 0.25px;
-  --font-caption1-fontFamily: "archivo", serif;
+  --font-caption1-fontFamily: "Aeonik", sans-serif;
   --font-caption1-fontWeight: 400;
   --font-caption1-fontSize: 16px;
   --font-caption1-lineHeight: 1.5;
   --font-caption1-letterSpacing: 0.25px;
-  --font-caption2-fontFamily: "archivo", serif;
+  --font-caption2-fontFamily: "Aeonik", sans-serif;
   --font-caption2-fontWeight: 500;
   --font-caption2-fontSize: 14px;
   --font-caption2-lineHeight: 1.429;
   --font-caption2-letterSpacing: 0.25px;
-  --font-btn-fontFamily: "archivo", serif;
+  --font-btn-fontFamily: "Aeonik", sans-serif;
 }
 .preset-plugin-dark {
   --primary-50: #FFFFFF;
