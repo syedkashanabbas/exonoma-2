@@ -7781,24 +7781,24 @@
     hr {
       border-color: var(--theme-divider);
     }
-    @font-face {
-    font-family: "Aeonik";
-    src: url("/fonts/aeonik/Aeonik-Regular.woff2") format("woff2"),
-        url("/fonts/aeonik/Aeonik-Regular.woff") format("woff");
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-  }
+ /* Regular */
+@font-face{
+  font-family:"Aeonik";
+  src: url("../fonts/aeonik/fonnts.com-Aeonik-Regular.ttf") format("truetype");
+  font-weight:400;
+  font-style:normal;
+  font-display:swap;
+}
 
-  /* Example: Aeonik Bold */
-  @font-face {
-    font-family: "Aeonik";
-    src: url("/fonts/aeonik/Aeonik-Bold.woff2") format("woff2"),
-        url("/fonts/aeonik/Aeonik-Bold.woff") format("woff");
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
-  }
+/* Bold */
+@font-face{
+  font-family:"Aeonik";
+  src: url("../fonts/aeonik/fonnts.com-Aeonik-Bold.ttf") format("truetype");
+  font-weight:700;
+  font-style:normal;
+  font-display:swap;
+}
+
     body {
       font-family: "Aeonik", sans-serif;
       background: var(--theme-bg-default);
