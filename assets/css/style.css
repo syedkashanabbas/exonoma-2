@@ -1788,16 +1788,16 @@
     background-image: radial-gradient(146.46% 68.12% at 50% 29.86%, transparent 0%, var(--theme-bg-default) 100%);
   }
   .bg-\[url\(\'\.\.\/images\/blog\/blog1\.png\'\)\] {
-    background-image: url('../images/blog/blog1.png');
+    background-image: url('../images/blog/blog1.webp');
   }
   .bg-\[url\(\'\.\.\/images\/blog\/blog2\.jpg\'\)\] {
-    background-image: url('../images/blog/blog2.jpg');
+    background-image: url('../images/blog/blog2.webp');
   }
   .bg-\[url\(\'\.\.\/images\/blog\/blog3\.jpg\'\)\] {
-    background-image: url('../images/blog/blog3.jpg');
+    background-image: url('../images/blog/blog3.webp');
   }
   .bg-\[url\(\'\.\.\/images\/blog\/blog4\.jpg\'\)\] {
-    background-image: url('../images/blog/blog4.jpg');
+    background-image: url('../images/blog/blog4.webp');
   }
   .bg-\[url\(\'\.\.\/images\/blog\/blog5\.png\'\)\] {
     background-image: url('../images/blog/blog5.png');
