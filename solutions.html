@@ -55,45 +55,77 @@
 
   <!-- [Custom Styles] -->
   <style>
-    .hero-heading {
-      font-family: "Aeonik", sans-serif;
-      font-size: 85px !important;
-      font-weight: 400 !important;
-      letter-spacing: -5.35px !important;
-      color: #fff !important;
-      text-align: center !important;
-      line-height: 1.1;
-    }
-    @media (max-width: 768px) {
       .hero-heading {
-        font-size: 48px !important;
-        letter-spacing: -2px !important;
+        font-family: "Aeonik", sans-serif;
+        font-size: 85px !important;
+        font-weight: 600 !important;
+        letter-spacing: -5.35px !important;
+        color: #fff !important;
+        text-align: center !important;
+        line-height: 1.1;
       }
-    }
-    @media (max-width: 480px) {
-      .hero-heading {
-        font-size: 36px !important;
-        letter-spacing: -1.5px !important;
+      .sub-hero-heading {
+        font-family: "Aeonik", sans-serif;
+        font-size: 85px !important;
+        font-weight: 425 !important;
+        letter-spacing: -5.35px !important;
+        color: #fff !important;
+        text-align: center !important;
+        line-height: 1.1;
       }
-    }
-    .common-section {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-    @media (min-width: 768px) {
+      @media (max-width: 768px) {
+        .hero-heading {
+          font-size: 48px !important;
+          letter-spacing: -2px !important;
+        }
+        .sub-hero-heading {
+          font-size: 48px !important;
+          letter-spacing: -2px !important;
+        }
+      }
+      @media (max-width: 480px) {
+        .hero-heading {
+          font-size: 36px !important;
+          letter-spacing: -1.5px !important;
+        }
+        .sub-hero-heading {
+          font-size: 36px !important;
+          letter-spacing: -1.5px !important;
+        }
+      }
       .common-section {
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 60px;
+        padding-bottom: 60px;
       }
-    }
-    @media (min-width: 1024px) {
-      .common-section {
-        padding-top: 100px;
-        padding-bottom: 100px;
+      @media (min-width: 768px) {
+        .common-section {
+          padding-top: 80px;
+          padding-bottom: 80px;
+        }
       }
-    }
-
-  </style>
+      @media (min-width: 1024px) {
+        .common-section {
+          padding-top: 100px;
+          padding-bottom: 100px;
+        }
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      .section-marquee .animate-marquee {
+        display: inline-flex;
+        animation: marquee 42s linear infinite;
+        will-change: transform;
+      }
+      .section-marquee:hover .animate-marquee {
+        animation-play-state: paused;
+      }
+    </style>
 </head>
 
 
@@ -238,16 +270,16 @@
 
   <div class="container relative z-10">
     <div class="flex flex-col items-center gap-3 md:gap-6 text-center">
-  
       <h1 class="hero-heading" data-aos="fade-up" data-aos-delay="500">
         Solutions
       </h1>
-      <h3 class="h3" data-aos="fade-up" data-aos-delay="600">
-       Pick the solution that matches your goals and context. Every path includes risk controls and transparent reports
-      </h3>
-   
-    </div>
-
+           
+            <p
+              class="h6 max-w-[343px] lg:max-w-[820px] text-theme-text-secondary"
+            >
+                     Pick the solution that matches your goals and context. Every path includes risk controls and transparent reports.
+            </p>
+          </div>
  
 
     <div class="flex flex-wrap justify-center text-center gap-2 sm:gap-4 lg:gap-5 mt-4 sm:mt-8" data-aos="fade-up" data-aos-delay="700">
