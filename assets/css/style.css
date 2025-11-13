@@ -2009,15 +2009,9 @@
   .bg-\[url\(\'\.\.\/images\/shared\/pattern1-light\.svg\'\)\] {
     background-image: url('../images/shared/pattern1-light.svg');
   }
-  .bg-\[url\(\'\.\.\/images\/team\/team-member-1\.png\'\)\] {
-    background-image: url('../images/team/team-member-1.png');
-  }
-  .bg-\[url\(\'\.\.\/images\/testimonial\/avatar-bg1\.svg\'\)\] {
-    background-image: url('../images/testimonial/avatar-bg1.svg');
-  }
-  .bg-\[url\(\'\.\.\/images\/testimonial\/avatar-bg2\.svg\'\)\] {
-    background-image: url('../images/testimonial/avatar-bg2.svg');
-  }
+
+
+
   .bg-\[url\(\'data\:image\/svg\+xml\;utf8\,\<svg\%20xmlns\=\%22http\:\/\/www\.w3\.org\/2000\/svg\%22\%20viewBox\=\%220\%200\%2050\%2060\%22\>\<text\%20x\=\%220\%22\%20y\=\%2225\%22\%20fill\=\%22\%23E6E8EE\%22\%20font-size\=\%2280px\%22\>\.\%3C\/text\%3E\<\/svg\>\'\)\] {
     background-image: url('data:image/svg+xml;utf8,<svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%2050%2060%22><text%20x=%220%22%20y=%2225%22%20fill=%22%23E6E8EE%22%20font-size=%2280px%22>.%3C/text%3E</svg>');
   }

@@ -1,3 +1,5 @@
+
+
 var rtl_flag = !1,
   dark_flag = !1;
 
@@ -115,3 +117,27 @@ document.addEventListener("DOMContentLoaded", function () {
         reloadAllIframes();
     });
 });
+
+
+(function () {
+  const oldDomain = "https://demo-exonomo.netlify.app";
+  const newDomain = "https://exonoma.ai";
+
+  // Replace in all attributes (href, src, content, etc.)
+  document.querySelectorAll("*").forEach((el) => {
+    for (const attr of el.attributes) {
+      if (attr.value.includes(oldDomain)) {
+        el.setAttribute(attr.name, attr.value.replaceAll(oldDomain, newDomain));
+      }
+    }
+  });
+
+  // Replace inside text nodes (e.g., inline text or JSON-LD scripts)
+  document.querySelectorAll("script, meta, link, body, head").forEach((el) => {
+    if (el.innerHTML && el.innerHTML.includes(oldDomain)) {
+      el.innerHTML = el.innerHTML.replaceAll(oldDomain, newDomain);
+    }
+  });
+
+  console.log(`✅ All ${oldDomain} references replaced with ${newDomain}`);
+})();
