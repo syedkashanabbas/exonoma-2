@@ -176,196 +176,190 @@
     <div id="loader-wrapper"></div>
 
     <!-- [ Nav ] start -->
-    <nav class="z-50 w-full relative">
-      <div class="container">
-        <div class="static flex py-4 items-center justify-between">
-          <div
-            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between gap-6"
-          >
+   <nav class="z-50 w-full relative">
+  <div class="container">
+    <div class="static flex py-4 items-center justify-between">
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between gap-6">
+        <div class="flex flex-1 flex-shrink-0 items-center justify-between text-primary-500">
+          <!-- [ Logo main ] start -->
+          <a href="index.it.html">
             <div
-              class="flex flex-1 flex-shrink-0 items-center justify-between text-primary-500"
+              data-aos="fade-down"
+              data-aos-delay="100"
+              class="w-[140px] h-[45px] bg-no-repeat bg-contain"
+              style="
+                background-image: url('assets/images/logo.png');
+                background-position: center;
+              "
+            ></div>
+          </a>
+        </div>
+
+        <div class="nav-collapse grow hidden w-full lg:flex lg:w-full flex-auto" id="main-navbar-collapse">
+          <div class="justify-center flex flex-col lg:flex-row p-0 lg:rounded-full">
+
+            <a
+              class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429]"
+              href="./index.it.html"
+              data-aos="fade-down"
+              data-aos-delay="100"
             >
-              <!-- [ Logo main ] start -->
-              <a href="index.it.html">
-                <div
-                  data-aos="fade-down"
-                  data-aos-delay="100"
-                  class="w-[140px] h-[45px] bg-no-repeat bg-contain"
-                  style="background-image: url('assets/images/logo.png')"
-                ></div>
-              </a>
-            </div>
-            <div
-              class="nav-collapse grow hidden w-full lg:flex lg:w-full flex-auto"
-              id="main-navbar-collapse"
+              Home
+            </a>
+
+            <a
+              class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429]"
+              href="./solutions.it.html"
+              data-aos="fade-down"
+              data-aos-delay="100"
             >
-              <div
-                class="justify-center flex flex-col lg:flex-row p-0 lg:rounded-full"
+              Soluzioni
+            </a>
+
+            <a
+              class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429]"
+              href="./platform.it.html"
+              data-aos="fade-down"
+              data-aos-delay="150"
+            >
+              Piattaforme
+            </a>
+
+            <a
+              class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429]"
+              href="./security.it.html"
+              data-aos="fade-down"
+              data-aos-delay="200"
+            >
+              Sicurezza
+            </a>
+
+            <!-- Resources Dropdown -->
+            <div class="btn-group group">
+              <button
+                class="inline-flex text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429] dropdown-toggle arrow-none ltr:text-left rtl:text-right max-lg:w-full justify-between items-center"
+                type="button" data-pc-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                data-aos="fade-down" data-aos-delay="250"
               >
-                <a
-                  class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429]"
-                  href="./index.it.html"
-                  data-aos="fade-down"
-                  data-aos-delay="100"
-                >
-                  Home
-                </a>
-                <a
-                  class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429]"
-                  href="./solutions.it.html"
-                  data-aos="fade-down"
-                  data-aos-delay="100"
-                >
-                  Solutions
-                </a>
-                <a
-                  class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429]"
-                  href="./platform.it.html"
-                  data-aos="fade-down"
-                  data-aos-delay="150"
-                >
-                  Platforms
-                </a>
-                <a
-                  class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429]"
-                  href="./security.it.html"
-                  data-aos="fade-down"
-                  data-aos-delay="200"
-                >
-                  Security
-                </a>
-
-                <div class="btn-group group">
-                  <button
-                    class="inline-flex text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429] dropdown-toggle arrow-none ltr:text-left rtl:text-right max-lg:w-full justify-between items-center"
-                    type="button"
-                    data-pc-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    data-aos="fade-down"
-                    data-aos-delay="250"
-                  >
-                    Resources
-                    <i class="ti ti-chevron-down"></i>
-                  </button>
-
-                  <div
-                    class="dropdown-menu dropdown-center group-[.drp-show]:max-lg:!relative !w-[368px] max-lg:!w-full max-lg:!transform-none !p-0 overflow-hidden shadow-[0px_0px_2px_0px_rgba(0,0,0,0.2),_rgba(26,28,30,0.06)_0px_16px_10px_0px]"
-                  >
-                    <ul class="p-2">
-                      <li>
-                        <a
-                          href="./blogs.it.html"
-                          class="px-3 md:px-4 py-[6px] md:py-[10px] hover:bg-neutral-50 focus:bg-neutral-200 rounded-xl transition-all block my-0.5"
-                        >
-                          <div class="my-[6px]">
-                            <h6 class="subtitle1 mb-1">Blog</h6>
-                            <p class="body2 text-theme-textsecondary">
-                              Explore our latest articles and insights.
-                            </p>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="./guides.it.html"
-                          class="px-3 md:px-4 py-[6px] md:py-[10px] hover:bg-neutral-50 focus:bg-neutral-200 rounded-xl transition-all block my-0.5"
-                        >
-                          <div class="my-[6px]">
-                            <h6 class="subtitle1 mb-1">Guides</h6>
-                            <p class="body2 text-theme-textsecondary">
-                              Follow our comprehensive guides to get started.
-                            </p>
-                          </div>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="./help.it.html"
-                          class="px-3 md:px-4 py-[6px] md:py-[10px] hover:bg-neutral-50 focus:bg-neutral-200 rounded-xl transition-all block my-0.5"
-                        >
-                          <div class="my-[6px]">
-                            <h6 class="subtitle1 mb-1">Help Center</h6>
-                            <p class="body2 text-theme-textsecondary">
-                              Find answers to common questions and support
-                              topics.
-                            </p>
-                          </div>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a
-                          href="./events.it.html"
-                          class="px-3 md:px-4 py-[6px] md:py-[10px] hover:bg-neutral-50 focus:bg-neutral-200 rounded-xl transition-all block my-0.5"
-                        >
-                          <div class="my-[6px]">
-                            <h6 class="subtitle1 mb-1">Events</h6>
-                            <p class="body2 text-theme-textsecondary">
-                              Stay informed about upcoming events and webinars.
-                            </p>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <a
-                  class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429]"
-                  href="./company.it.html"
-                  data-aos="fade-down"
-                  data-aos-delay="300"
-                >
-                  Company
-                </a>
-                <div class="py-5 px-6 sm:hidden">
-                  <hr class="mb-4" />
-                  <div class="flex items-center justify-between">
-                    <a href="#" class="btn-primary btn w-full">Get Started</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex items-center gap-3">
-            <div data-aos="fade-down" data-aos-delay="300" class=" btn-group">
-              <button class="btn btn-outline-primary dropdown-toggle arrow-none" type="button" data-pc-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Italian
+                Risorse
                 <i class="ti ti-chevron-down"></i>
               </button>
-              <div class="dropdown-menu dropdown-center overflow-hidden border border-neutral-200">
-                <a class="dropdown-item subtitle1 " href="index.html">English (UK)</a>
-                <a class="dropdown-item subtitle1 active" href="./index.it.html">Italiano</a>
+
+              <div
+                class="dropdown-menu dropdown-center group-[.drp-show]:max-lg:!relative !w-[368px] max-lg:!w-full max-lg:!transform-none !p-0 overflow-hidden shadow-[0px_0px_2px_0px_rgba(0,0,0,0.2),_rgba(26,28,30,0.06)_0px_16px_10px_0px]"
+              >
+                <ul class="p-2">
+                  
+                  <li>
+                    <a href="./blogs.it.html"
+                      class="px-3 md:px-4 py-[6px] md:py-[10px] hover:bg-neutral-50 focus:bg-neutral-200 rounded-xl transition-all block my-0.5"
+                    >
+                      <div class="my-[6px]">
+                        <h6 class="subtitle1 mb-1">Blog</h6>
+                        <p class="body2 text-theme-textsecondary">Esplora i nostri articoli e approfondimenti.</p>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="./guides.it.html"
+                      class="px-3 md:px-4 py-[6px] md:py-[10px] hover:bg-neutral-50 focus:bg-neutral-200 rounded-xl transition-all block my-0.5"
+                    >
+                      <div class="my-[6px]">
+                        <h6 class="subtitle1 mb-1">Guide</h6>
+                        <p class="body2 text-theme-textsecondary">Segui le nostre guide complete per iniziare.</p>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="./help.it.html"
+                      class="px-3 md:px-4 py-[6px] md:py-[10px] hover:bg-neutral-50 focus:bg-neutral-200 rounded-xl transition-all block my-0.5"
+                    >
+                      <div class="my-[6px]">
+                        <h6 class="subtitle1 mb-1">Centro Assistenza</h6>
+                        <p class="body2 text-theme-textsecondary">Trova risposte a domande frequenti e temi di supporto.</p>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="./events.it.html"
+                      class="px-3 md:px-4 py-[6px] md:py-[10px] hover:bg-neutral-50 focus:bg-neutral-200 rounded-xl transition-all block my-0.5"
+                    >
+                      <div class="my-[6px]">
+                        <h6 class="subtitle1 mb-1">Eventi</h6>
+                        <p class="body2 text-theme-textsecondary">Rimani aggiornato su eventi e webinar in arrivo.</p>
+                      </div>
+                    </a>
+                  </li>
+
+                </ul>
               </div>
             </div>
- 
+
             <a
-              class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429] max-sm:hidden"
-              href="#"
+              class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429]"
+              href="./company.it.html"
               data-aos="fade-down"
               data-aos-delay="300"
             >
-              Sign In
+              Azienda
             </a>
-            <a
-              href="#"
-              class="btn-primary btn max-sm:hidden"
-              data-aos="fade-down"
-              data-aos-delay="350"
-              >Get Started</a
-            >
+
+            <div class="py-5 px-6 sm:hidden">
+              <hr class="mb-4" />
+              <div class="flex items-center justify-between">
+                <a href="#" class="btn-primary btn w-full">Inizia Ora</a>
+              </div>
+            </div>
+
           </div>
-          <button
-            data-pc-toggle="nav-collapse"
-            type="button"
-            data-pc-target="#main-navbar-collapse"
-            class="inline-flex ltr:ml-2 rtl:mr-2 items-center p-2 w-10 h-10 justify-center text-sm text-neutral-900 rounded-full lg:hidden hover:bg-neutral-100 focus:outline-none"
-          >
-            <i class="ti ti-menu-2 text-2xl leading-none"></i>
-          </button>
         </div>
       </div>
-    </nav>
+
+      <!-- Right-side buttons -->
+      <div class="flex items-center gap-3">
+
+        <div data-aos="fade-down" data-aos-delay="300" class="btn-group">
+          <button class="btn btn-outline-primary dropdown-toggle arrow-none" type="button" data-pc-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Italiano
+            <i class="ti ti-chevron-down"></i>
+          </button>
+          <div class="dropdown-menu dropdown-center overflow-hidden border border-neutral-200">
+            <a class="dropdown-item subtitle1" href="index.html">English (UK)</a>
+            <a class="dropdown-item subtitle1 active" href="./index.it.html">Italiano</a>
+          </div>
+        </div>
+
+        <a
+          class="inline-block text-neutral-900 hover:bg-primary-500/[.04] dark:text-themedark-bodycolor rounded-full px-[18px] py-3 text-[14px] font-medium transition-all leading-[1.429] max-sm:hidden"
+          href="#"
+          data-aos="fade-down"
+          data-aos-delay="300"
+        >
+          Accedi
+        </a>
+
+        <a href="#" class="btn-primary btn max-sm:hidden" data-aos="fade-down" data-aos-delay="350">
+          Inizia Ora
+        </a>
+
+      </div>
+
+      <button
+        data-pc-toggle="nav-collapse"
+        type="button"
+        data-pc-target="#main-navbar-collapse"
+        class="inline-flex ltr:ml-2 rtl:mr-2 items-center p-2 w-10 h-10 justify-center text-sm text-neutral-900 rounded-full lg:hidden hover:bg-neutral-100 focus:outline-none"
+      >
+        <i class="ti ti-menu-2 text-2xl leading-none"></i>
+      </button>
+
+    </div>
+  </div>
+</nav>
+
 
     <!-- [ Nav ] end -->
 
